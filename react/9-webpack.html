@@ -1,0 +1,748 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第九节：搭建webpack · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="8-ui.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [React学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1-git.html">
+            
+                <a href="1-git.html">
+            
+                    
+                    第一节：学习git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2-nodejs.html">
+            
+                <a href="2-nodejs.html">
+            
+                    
+                    第二节：安装nodejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="3-npm.html">
+            
+                <a href="3-npm.html">
+            
+                    
+                    第三节：npm命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="4-es6.html">
+            
+                <a href="4-es6.html">
+            
+                    
+                    第四节：es6新增语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="5-react.html">
+            
+                <a href="5-react.html">
+            
+                    
+                    第五节：react
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="6-reactRouter.html">
+            
+                <a href="6-reactRouter.html">
+            
+                    
+                    第六节：reactRouter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="7-ajax.html">
+            
+                <a href="7-ajax.html">
+            
+                    
+                    第七节：ajax简单介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="8-ui.html">
+            
+                <a href="8-ui.html">
+            
+                    
+                    第八节：materialUI简单使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.9" data-path="9-webpack.html">
+            
+                <a href="9-webpack.html">
+            
+                    
+                    第九节：搭建webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    [Redux学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../redux/1-hello.html">
+            
+                <a href="../redux/1-hello.html">
+            
+                    
+                    什么是 Redux ？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../redux/2-setup.html">
+            
+                <a href="../redux/2-setup.html">
+            
+                    
+                    基本环境准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../redux/3-state.html">
+            
+                <a href="../redux/3-state.html">
+            
+                    
+                    内部 state 使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../redux/4-change-parent.html">
+            
+                <a href="../redux/4-change-parent.html">
+            
+                    
+                    不用 redux 实现组件间通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../redux/5-store.html">
+            
+                <a href="../redux/5-store.html">
+            
+                    
+                    Redux Store 数据大本营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../redux/6-rerender.html">
+            
+                <a href="../redux/6-rerender.html">
+            
+                    
+                    React 充电：组件何时会被再次 render
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../redux/7-connect.html">
+            
+                <a href="../redux/7-connect.html">
+            
+                    
+                    connect 订阅 store 数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../redux/8-reducer-composition.html">
+            
+                <a href="../redux/8-reducer-composition.html">
+            
+                    
+                    处理多类数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../redux/9-js-copy.html">
+            
+                <a href="../redux/9-js-copy.html">
+            
+                    
+                    JS 基础充电：拷贝
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../redux/10-combine-reducers.html">
+            
+                <a href="../redux/10-combine-reducers.html">
+            
+                    
+                    reducer 拆分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.11" data-path="../redux/11-relation.html">
+            
+                <a href="../redux/11-relation.html">
+            
+                    
+                    关系型数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="../redux/12-todo.html">
+            
+                <a href="../redux/12-todo.html">
+            
+                    
+                    HOMEWORK：todo
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="../redux/13-thunk.html">
+            
+                <a href="../redux/13-thunk.html">
+            
+                    
+                    Hello redux-thunk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="../redux/14-hello-world.html">
+            
+                <a href="../redux/14-hello-world.html">
+            
+                    
+                    redux-thunk 的一个 Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="../redux/15-use-api.html">
+            
+                <a href="../redux/15-use-api.html">
+            
+                    
+                    redux-hello 项目联通后台 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="../redux/16-redux-end.html">
+            
+                <a href="../redux/16-redux-end.html">
+            
+                    
+                    Redux 结语
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第九节：搭建webpack</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x5B89;&#x88C5;webpack<br>npm install -D webpack(&#x9879;&#x76EE;&#x5185;&#x5C40;&#x90E8;&#x5B89;&#x88C5;)<br>npm install -g webpack(&#x5168;&#x5C40;&#x5B89;&#x88C5;)</p>
+<p>&#x6253;&#x5305;(&#x5168;&#x5C40;&#x5B89;&#x88C5;webpack)<br>webpack src/index.js build/bundle.js --- webpack &#x5165;&#x53E3;&#x6587;&#x4EF6; &#x51FA;&#x53E3;&#x6587;&#x4EF6;<br>(&#x975E;&#x5168;&#x5C40;)<br>./node_modules/.bin/webpack &#x5165;&#x53E3;&#x6587;&#x4EF6; &#x51FA;&#x53E3;&#x6587;&#x4EF6;</p>
+<p>&#x5728;packges.json&#x914D;&#x7F6E;,&#x53EF;&#x4EE5;&#x6267;&#x884C;npm run bulid&#x6267;&#x884C;&#x6253;&#x5305;&#x64CD;&#x4F5C;    --watch&#x76D1;&#x542C;&#xFF0C;&#x66F4;&#x6539;&#x540E;&#x81EA;&#x52A8;&#x66F4;&#x65B0;</p>
+<pre><code>&quot;scripts&quot;:{
+  &quot;bulid&quot;: &quot;./node_modules/.bin/webpack src/index.js build/bundle.js --watch&quot;
+}
+</code></pre><h3 id="&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#xFF0C;&#x7528;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x914D;&#x7F6E;&#x63A8;&#x8350;">&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x914D;&#x7F6E;&#xFF0C;&#x7528;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x914D;&#x7F6E;(&#x63A8;&#x8350;)</h3>
+<p>&#x5982;&#x679C;&#x60F3;&#x8981;&#x652F;&#x6301;es6 &#x548C;JSX &#x8BED;&#x6CD5;&#xFF0C;&#x9996;&#x5148;&#x8981;&#x5B89;&#x88C5;babel<br><code>npm install --save-dev babel-loader babel-core</code><br>&#x4F7F;&#x7528;es6&#x8BED;&#x6CD5;&#x9700;&#x8981;&#x88C5;&#x5305;babel-preset-env<br><code>npm install babel-preset-env --save-dev</code><br>&#x4F7F;&#x7528;JSX&#x8BED;&#x6CD5;&#x9700;&#x8981;&#x88C5;&#x5305;babel-preset-react<br><code>npm install --save-dev babel-preset-react</code><br>&#x8FD8;&#x8981;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;.babelrc  </p>
+<pre><code>{
+  &quot;presets&quot;: [&quot;env&quot;,&quot;react&quot;]
+}
+</code></pre><p>&#x8981;&#x5BFC;&#x5165;css&#x6587;&#x4EF6;&#x9700;&#x8981;&#x88C5;&#x4E24;&#x4E2A;&#x5305;
+<code>npm i --save-dev style-loader css-loader</code><br>&#x5C06;jquery&#x66B4;&#x9732;&#x6210;&#x5168;&#x5C40;&#x53D8;&#x91CF;<br>&#x5148;&#x88C5;&#x5305;&#xFF0C;&#x540E;&#x518D;rules&#x91CC;&#x8BBE;&#x7F6E;<br><code>npm i -D expose-loader</code><br>&#x6253;&#x5305;&#x524D;&#x5148;&#x5220;&#x9664;&#x5B58;&#x653E;&#x6587;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x9700;&#x5148;&#x88C5;&#x5305;&#xFF0C;&#x7136;&#x540E;&#x5728;packges.json&#x914D;&#x7F6E;
+<code>npm i -D rimraf</code></p>
+<h4 id="packgesjson">packges.json</h4>
+<pre><code>&quot;scripts&quot;:{
+  &quot;bulid&quot;: &quot;rimraf build &amp;&amp; ./node_modules/.bin/webpack&quot;
+}
+</code></pre><p>&#x5148;&#x5220;&#x9664;build&#x7136;&#x540E;&#x6267;&#x884C;</p>
+<h4 id="webpackconfigjs">webpack.config.js</h4>
+<pre><code>const path = require(&apos;path&apos;);   nodejs&#x7684;&#x6838;&#x5FC3;&#x6A21;&#x5757;
+var webpack = require(&apos;webpack&apos;);
+const ExtractTextPlugin = require(&quot;extract-text-webpack-plugin&quot;);
+const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;);
+module.exports = {   &#x6A21;&#x5757;&#x63A5;&#x53E3;
+  entry: &apos;./src/index.js&apos;,     &#x8981;&#x6253;&#x5305;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5165;&#x53E3;&#x6587;&#x4EF6;
+  output: {     &#x6253;&#x5305;&#x5230;&#x54EA;&#x91CC;&#xFF0C;&#x51FA;&#x53E3;&#x6587;&#x4EF6;
+    path: path.resolve(__dirname,&quot;build&quot;),  __dirname&#x4EE3;&#x8868;webpack.config.js&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;  &#x62FC;&#x63A5;build&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5F62;&#x6210;&#x8DEF;&#x5F84;
+    filename: &quot;bundle.js&quot;  &#x6587;&#x4EF6;&#x540D;
+  },
+  watch: true,    &#x662F;&#x5426;&#x76D1;&#x542C;&#xFF0C;true&#x76D1;&#x542C;,false&#x4E0D;&#x76D1;&#x542C;
+  devtool: &quot;source-map&quot;,    &#x62A5;&#x9519;&#x62A5;&#x5230;&#x6E90;&#x4EE3;&#x7801;&#x91CC;
+  module: {   &#x6A21;&#x5757;
+    rules: [   &#x89C4;&#x5219;
+      { test: /\.js$/, exclude: /node_modules/, use: &quot;babel-loader&quot; }, &#x6253;&#x5305;&#x4EE5;.js&#x4E3A;&#x7ED3;&#x5C3E;&#x7684;,&#x5C31;&#x7528;babel-loader&#x5904;&#x7406;&#xFF0C;exclude&#x6392;&#x9664;node_modules&#x6587;&#x4EF6;&#x5939;
+      {
+        test: /\.css$/,
+        use: ExtractTextPlugin.extract({
+          fallback: &quot;style-loader&quot;,
+          use: [&quot;css-loader&quot;,&quot;postcss-loader&quot;]
+        })
+      },  &#x628A;css&#x5355;&#x72EC;&#x751F;&#x6210;&#x6587;&#x4EF6;,&#x6DFB;&#x52A0;css&#x524D;&#x7F00;
+      { test: /\.(jpe?g|png)$/, use: &quot;file-loader&quot; },  &#x6253;&#x5305;&#x56FE;&#x7247;
+      { test: /\.less$/,use: [ &apos;style-loader&apos;, &apos;postcss-loader&apos;,&apos;less-loader&apos; ] },  less&#xFF0C;&#x5148;&#x6267;&#x884C;&#x540E;&#x9762;&#x7684;loader
+      {
+        test: require.resolve(&apos;jquery&apos;),  &#x5339;&#x914D;jquery&#xFF0C;&#x66B4;&#x9732;&#x6210;&#x5168;&#x5C40;&#x53D8;&#x91CF;$
+        use: [{
+          loader: &apos;expose-loader&apos;,
+          options: &apos;$&apos;
+        }]
+      }
+    ]
+  },
+  plugins:[  &#x63D2;&#x4EF6;
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false,   &#x4E0D;&#x8981;&#x8B66;&#x544A;
+        drop_console: false,    &#x5220;&#x6389;&#x6CE8;&#x91CA;
+      }
+    }),
+    new webpack.DefinePlugin({
+      &apos;process.env.NODE_ENV&apos;: &apos;&quot;production&quot;&apos;,   &#x751F;&#x4EA7;&#x73AF;&#x5883;
+    }),
+    new ExtractTextPlugin(&quot;styles.css&quot;),   &#x751F;&#x6210;&#x5355;&#x72EC;css&#x6587;&#x4EF6;&#x5B58;&#x653E;&#x4F4D;&#x7F6E;&#xFF0C;&#x51FA;&#x53E3;&#x662F;output&#x5B9A;&#x4E49;&#x7684;&#x51FA;&#x53E3;
+    new HtmlWebpackPlugin({
+      template: &apos;template/index.html&apos;,   &#x6A21;&#x677F;html&#x6587;&#x4EF6;&#x53C2;&#x8003;&#x5730;&#x5740;
+      filename: path.resolve(__dirname,&apos;index.html&apos;)  &#x751F;&#x6210;&#x6A21;&#x677F;&#x7684;&#x4F4D;&#x7F6E;,webpack.config.js&#x6587;&#x4EF6;&#x540C;&#x7EA7;&#x7684;index.html&#x9875;&#x9762;
+    })
+  ]
+}
+</code></pre><h4 id="&#x6DFB;&#x52A0;css&#x524D;&#x7F00;">&#x6DFB;&#x52A0;css&#x524D;&#x7F00;</h4>
+<p>&#x5148;&#x88C5;&#x5305;<br><code>npm i -D  postcss-loader</code><br><code>npm i -D autoprefixer</code><br><code>npm i -D cssnano</code><br>&#x65B0;&#x5EFA;postcss.config.js&#x6587;&#x4EF6;</p>
+<pre><code>module.exports = {
+  plugins: [
+    require(&apos;autoprefixer&apos;),   &#x5BFC;&#x5165;autoprefixer&#xFF0C;&#x6DFB;&#x52A0;css&#x524D;&#x7F00;
+    require(&apos;cssnano&apos;)  &#x5BFC;&#x5165;cssnano,&#x538B;&#x7F29;css&#x6837;&#x5F0F;
+  ]
+}
+</code></pre><h4 id="&#x6253;&#x5305;&#x56FE;&#x7247;">&#x6253;&#x5305;&#x56FE;&#x7247;</h4>
+<p>&#x88C5;&#x5305;<br><code>npm install --save-dev file-loader</code></p>
+<h4 id="&#x628A;css&#x5206;&#x79BB;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x6587;&#x4EF6;">&#x628A;css&#x5206;&#x79BB;&#x5230;&#x4E00;&#x4E2A;&#x5355;&#x72EC;&#x7684;&#x6587;&#x4EF6;</h4>
+<p>&#x88C5;&#x5305;<br><code>npm install --save-dev extract-text-webpack-plugin</code></p>
+<h4 id="&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4E00;&#x4E2A;html">&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4E00;&#x4E2A;html</h4>
+<p>&#x88C5;&#x5305;<br><code>npm install --save-dev html-webpack-plugin</code></p>
+<h3 id="&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x914D;&#x7F6E;">&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x914D;&#x7F6E;</h3>
+<p>&#x88C5;&#x5305; <code>npm i -D webpack-dev-server</code>  </p>
+<h4 id="&#x81EA;&#x52A8;&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;">&#x81EA;&#x52A8;&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;</h4>
+<p>&#x88C5;&#x5305; <code>npm i -D open-browser-webpack-plugin</code>  </p>
+<h4 id="&#x5EFA;&#x7ACB;webpack-dev-serverjs&#x6587;&#x4EF6;">&#x5EFA;&#x7ACB;webpack-dev-server.js&#x6587;&#x4EF6;</h4>
+<pre><code>const path = require(&apos;path&apos;);
+const webpack = require(&apos;webpack&apos;);
+const HtmlWebpackPlugin = require(&apos;html-webpack-plugin&apos;);
+const OpenBrowserPlygin = require(&apos;open-browser-webpack-plugin&apos;);
+
+module.exports = {
+  entry: &apos;./src/index.js&apos;,
+  output: {
+    filename: &quot;bundle.[hash:5].js&quot;,   &#x5982;&#x679C;&#x6709;&#x8DEF;&#x5F84;&#xFF0C;&#x8DEF;&#x5F84;&#x5730;&#x5740;/&#x6587;&#x4EF6;&#x540D;
+    publicPath: &apos;/&apos;
+  },
+  devServer: {
+    contentBase: path.join(__dirname, &quot;build&quot;),   &#x9759;&#x6001;&#x6587;&#x4EF6;&#x670D;&#x52A1;&#x5668;&#xFF0C;build&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;localhost:3000/&#x540D;&#x79F0; &#x8BBF;&#x95EE;&#x5230;
+    compress: true,   &#x4E00;&#x5207;&#x670D;&#x52A1;&#x90FD;&#x542F;&#x7528;gzip &#x538B;&#x7F29;
+    port: 3000,   &#x5730;&#x5740;&#x7531;8080&#x6539;&#x4E3A;3000
+    historyApiFallback: true   &#x4E0D;&#x7BA1;&#x8BBF;&#x95EE;&#x4EC0;&#x4E48;&#x90FD;&#x8FD4;&#x56DE;index.html
+  },
+  devtool: &quot;source-map&quot;,
+  module: {
+    rules: [
+      { test: /\.js$/, exclude: /node_modules/, use: &quot;babel-loader&quot; },
+      {test: /\.css$/,use: [&apos;style-loader&apos;, &apos;postcss-loader&apos;]},
+      { test: /\.less$/,use: [&apos;style-loader&apos;, &apos;postcss-loader&apos;, &apos;less-loader&apos;]},
+      { test: /\.(jpe?g|png)$/, use: &quot;file-loader&quot; },
+      {
+        test: require.resolve(&apos;jquery&apos;),
+        use: [{
+          loader: &apos;expose-loader&apos;,
+          options: &apos;$&apos;
+        }]
+      }
+    ]
+  },
+  plugins:[
+    new HtmlWebpackPlugin({
+      template: &apos;template/index.html&apos;
+    }),
+    new OpenBrowserPlygin({     &#x81EA;&#x52A8;&#x6253;&#x5F00;&#x6D4F;&#x89C8;&#x5668;
+      url: &apos;http://localhost:3000&apos;
+    })
+  ]
+}
+</code></pre><p>&#x5728;package.json&#x914D;&#x7F6E;
+&quot;scripts&quot;: {
+  &quot;start&quot;: &quot;./node_modules/.bin/webpack-dev-server --config webpack-dev-server&quot;
+}</p>
+<h3 id="css&#x9884;&#x5904;&#x7406;&#x5668;">css&#x9884;&#x5904;&#x7406;&#x5668;</h3>
+<p><code>less</code> &#x6587;&#x4EF6;&#x540E;&#x7F00;&#x662F;less<br>&#x88C5;&#x5305;
+<code>npm i -D less less-loader</code></p>
+<ol>
+<li>&#x53EF;&#x4EE5;&#x5D4C;&#x5957;</li>
+<li>&#x652F;&#x6301;&#x53D8;&#x91CF;
+&#x4E8B;&#x4F8B;,&#x65B0;&#x5EFA;main.less<pre><code>@blue: &apos;#666&apos;;
+@opac: 1;
+.p{
+text-align: center;
+}
+.box{
+background-color: red;
+&amp;:hover{
+ background-color: #dd5555;
+}
+transition: all 1s;
+p{
+ font-size: 22px;
+ color: @blue;
+ opacity: @opac*0.5;
+ .p();
+}
+}
+</code></pre></li>
+</ol>
+<p><code>sass</code> &#x6587;&#x4EF6;&#x540E;&#x7F00;&#x662F;scss</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="8-ui.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 第八节：materialUI简单使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第九节：搭建webpack","level":"1.2.9","depth":2,"next":{"title":"[Redux学习]","level":"1.3","depth":1,"ref":"","articles":[{"title":"什么是 Redux ？","level":"1.3.1","depth":2,"path":"redux/1-hello.md","ref":"./redux/1-hello.md","articles":[]},{"title":"基本环境准备","level":"1.3.2","depth":2,"path":"redux/2-setup.md","ref":"./redux/2-setup.md","articles":[]},{"title":"内部 state 使用","level":"1.3.3","depth":2,"path":"redux/3-state.md","ref":"./redux/3-state.md","articles":[]},{"title":"不用 redux 实现组件间通信","level":"1.3.4","depth":2,"path":"redux/4-change-parent.md","ref":"./redux/4-change-parent.md","articles":[]},{"title":"Redux Store 数据大本营","level":"1.3.5","depth":2,"path":"redux/5-store.md","ref":"./redux/5-store.md","articles":[]},{"title":"React 充电：组件何时会被再次 render","level":"1.3.6","depth":2,"path":"redux/6-rerender.md","ref":"./redux/6-rerender.md","articles":[]},{"title":"connect 订阅 store 数据","level":"1.3.7","depth":2,"path":"redux/7-connect.md","ref":"./redux/7-connect.md","articles":[]},{"title":"处理多类数据","level":"1.3.8","depth":2,"path":"redux/8-reducer-composition.md","ref":"./redux/8-reducer-composition.md","articles":[]},{"title":"JS 基础充电：拷贝","level":"1.3.9","depth":2,"path":"redux/9-js-copy.md","ref":"./redux/9-js-copy.md","articles":[]},{"title":"reducer 拆分","level":"1.3.10","depth":2,"path":"redux/10-combine-reducers.md","ref":"./redux/10-combine-reducers.md","articles":[]},{"title":"关系型数据","level":"1.3.11","depth":2,"path":"redux/11-relation.md","ref":"./redux/11-relation.md","articles":[]},{"title":"HOMEWORK：todo","level":"1.3.12","depth":2,"path":"redux/12-todo.md","ref":"./redux/12-todo.md","articles":[]},{"title":"Hello redux-thunk","level":"1.3.13","depth":2,"path":"redux/13-thunk.md","ref":"./redux/13-thunk.md","articles":[]},{"title":"redux-thunk 的一个 Hello World","level":"1.3.14","depth":2,"path":"redux/14-hello-world.md","ref":"./redux/14-hello-world.md","articles":[]},{"title":"redux-hello 项目联通后台 API","level":"1.3.15","depth":2,"path":"redux/15-use-api.md","ref":"./redux/15-use-api.md","articles":[]},{"title":"Redux 结语","level":"1.3.16","depth":2,"path":"redux/16-redux-end.md","ref":"./redux/16-redux-end.md","articles":[]}]},"previous":{"title":"第八节：materialUI简单使用","level":"1.2.8","depth":2,"path":"react/8-ui.md","ref":"./react/8-ui.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react/9-webpack.md","mtime":"2017-06-02T13:03:17.839Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-02T13:15:48.758Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
