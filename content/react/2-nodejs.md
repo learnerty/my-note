@@ -1,7 +1,7 @@
 ### 安装node
 
-先在github上搜索nvm,找到安装ndoejs的命令
-
+linux系统，首先在github上搜索nvm,找到安装ndoejs的命令，执行
+#### nvm简单命令
 `nvm ls-remote`  从远端查看nodejs的版本
 
 `nvm install 版本号`  下载安装最新的nodejs版本
