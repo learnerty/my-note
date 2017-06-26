@@ -1,8 +1,8 @@
 Redux 是数据流管理工具。使用 Redux 的最重要的一句话：
 
->一切数据都要保存的 Store 之中，组件自己不保留自己的 state 数据
-
 后续我们会学的一切的技巧基本服务于一个关系：组件和 Store 的关系。
+
+Redux三大概念：reducer  store  action
 
 ### 为何要统一存放到 Store 中？
 
@@ -10,12 +10,6 @@ Redux 是数据流管理工具。使用 Redux 的最重要的一句话：
 
 - 第一，各个组件都统一读写同一个数据，组件间通信变得不成问题了
 - 第二，就是数据统一存放，代码比较不容易写乱
-
-
-注：先把上一节的代码回滚一下：
-
-- [revert change parent code](https://github.com/happypeter/redux-hello/commit/22e0a1767e4cb42ddfe16551575633b9293ade93)
-
 
 ### 创建 Store ？
 
@@ -58,12 +52,24 @@ export default store;
 - preloadedState，预加载 State ，这一项是可选的
 - enhancer，增强器，选填
 
-小贴士：如何快速找到接口文档。答案就是用 google 搜索。会用 google 和科学上网是程序员的基本素质。接口文档上，有中括号的参数是可选的（ optional ）。
-
 ### reducer
 
 reducer 和 store 一样是 redux 三大核心概念之一。reducer 是
 一个函数，用来修改 store 中的数据。
+
+reducer 的基本格式是：
+
+```
+(oldState, action) => nextState
+```
+
+这里先写一个空的 reducer ：
+
+```
+function commentReducer(state = [], action) {
+  return state;
+}
+```
 
 举个例子：
 
@@ -79,31 +85,6 @@ function commentReducer(state = [], action) {
   }
 }
 ```
-
-上面的代码我们先不用理解，只需要知道 reducer 的基本格式是：
-
-```
-(oldState, action) => nextState
-```
-
-但是我们这里先写一个空的 reducer ：
-
-```
-function commentReducer(state = [], action) {
-  return state;
-}
-```
-
-
-### 代码
-
-下面的代码实现了，数据存储到 store.js 同时组件内部读取 store.js 中的数据成功。
-
-代码：
-
-- [create store](https://github.com/happypeter/redux-hello/commit/e968d2a7ebe263bb91954a2ef6c93371babdd5d6)
-
-- [bring comments back](https://github.com/happypeter/redux-hello/commit/9964a7eb13745f45bda9eac905cd0b1657d77c2a)
 
 
 ### 修改 Store 中的数据
@@ -147,7 +128,17 @@ dispatch 就是发出（分发）的意思，可以用它发出 action 。
 
 它的作用就是接受 action ，然后根据 action 修改 store 中的数据。
 
-代码： [action reducer](https://github.com/happypeter/redux-hello/commit/b6636fe1fd7e56823c8263476b07e7d47d230112)
+代码：
+```
+function commentReducer(state = comments, action) {
+  switch (action.type) {
+    case 'ADD_COMMENT':
+      return [...state, action.comment];
+    default:
+      return state
+  }
+}
+```
 
 这样：每次 dispatch action 之后，reducer 都可以去修改 state 值了。
 
@@ -202,49 +193,3 @@ const store = createStore(commentReducer, comments);
 
 当 `return [...state, action.comment]` 执行之后，
 store.getState() 的值就被改变了。
-
-### 思考一个问题
-
-如果 PostBody.js 写成这样
-
-```
-import React, { Component } from 'react';
-import store from '../store';
-
-
-class PostBody extends Component {
-  constructor(){
-    super();
-    this.state = {
-      num: store.getState().length
-    }
-  }
-  render(){
-    return(
-      <div className="post-body">
-        <div className="comment-num">
-          { this.state.num }
-        </div>
-      </div>
-    )
-  }
-}
-
-export default PostBody;
-```
-
-那么，初始条件下，是可以从 store 中读取评论数量的，但是为什么，store 数据更新后，这里的
-评论数量不会变？
-
-答案：就是这里的 store.getState() 没有再次被执行（当然，即使 store.getState() 自动有了新值也不行的，因为 constructor() 只会执行一次）。
-
-好，那么如何得到更新后的评论数量呢？
-
-
-### 总体框图
-
-总之，我们就是需要组件有这样的能力，也就是每当 store 中的数据有了变化，组件会自动重新 render 。
-
-问题的解决方案就在下图中（注意我们还没有碰的功能模块是哪一个）
-
-![](../images/redux.jpg)

@@ -9,16 +9,71 @@
 
 ### 创建 reducers/index.js 文件
 
-创建一下 redux/reducers/index.js 文件，把 reducer 的代码拷贝进去。
+```
+let defaultState = {
+  comments: ['xxx1', 'hello2'],
+  likes: 0
+}
 
-- [create reducers](https://github.com/happypeter/redux-hello/commit/637492a945ae6827df8d2f66e041e73976fe28d8)
+function rootReducer(state = defaultState, action) {
+  switch (action.type) {
+    case 'ADD_COMMENT':
+      return {...state, comments: [...state.comments, action.comment]};
+    case 'INCREMENT_LIKE':
+      return {...state, likes: state.likes + 1 }
+    default:
+      return state
+  }
+}
+
+export default rootReducer
+```
+创建redux/store.js
+```
+import { createStore } from 'redux'
+import rootReducer from './reducers'
+
+let store = createStore(rootReducer)
+export default store
+```
 
 ### 拆出两个 reducer
 
 每个 reducer 的 state 默认值都只是自己对应的那一部分数据。
 
-- [combineReducers](https://github.com/happypeter/redux-hello/commit/b77874d7e3364cd3e2db0ae0857086584f0ac9a3)
+```
+import { combineReducers } from 'redux'
 
+let comments = ['xxx1', 'hello2']
+
+function commentReducer(state= comments, action) {
+  switch (action.type) {
+    case 'ADD_COMMENT':
+      return [...state, action.comment]
+    default:
+      return state
+  }
+}
+
+let likes = 0
+
+function likeReducer(state = likes, action) {
+  switch (action.type) {
+    case 'INCREMENT_LIKE':
+      return state + 1
+    default:
+      return state
+  }
+}
+
+const rootReducer = combineReducers({
+  comments: commentReducer,
+  likes: likeReducer
+})
+
+
+export default rootReducer
+```
 注意： combine 的意思是“合并”
 
 ```
@@ -43,4 +98,3 @@ const rootReducer = combineReducers({
 ### 参考资料
 
 - [官方的 combineReducers()文档](http://cn.redux.js.org/docs/recipes/reducers/UsingCombineReducers.html)
-提出了很多值得注意的点，还是应该看一下的。

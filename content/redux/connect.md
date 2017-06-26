@@ -1,4 +1,4 @@
-首先明确一点，就是 redux 可以配合多种框架使用，并不是 react 的一部分。所以天然的 react 组件和 redux store 之间是没有任何关系的。这一节，我们就把他们二者 `connect` 起来。
+首先明确一点，就是 redux 可以配合多种框架使用，并不是 react 的一部分。所以天然的 react 组件和 redux store 之间是没有任何关系的。我们要把他们二者 `connect` 起来。
 
 连接二者，需要一个专门的库，叫做 [react-redux](https://github.com/reactjs/react-redux)，这个是 React 官方的 Redux
 对 React 的绑定。
@@ -10,7 +10,6 @@ npm i --save react-redux
 ```
 
 具体的使用的主要涉及两个接口 Provider 和 connect 。
-
 
 
 ```
@@ -52,15 +51,3 @@ connect 完毕之后，PostBody 之中就多了一个属性：`this.props.commen
 ```
 
 这样，动态连接就建立了。
-
-### 代码
-
-代码: [dynamic data by react-redux](https://github.com/happypeter/redux-hello/commit/04fca61efb61d9919386310f6eff3d8d36b2d292)
-
-现在我们知道组件如何通过 connect 方法来动态订阅 store 数据了，所以各个组件中的 setState() 就可以删除了。
-
-- [remove setState()](https://github.com/happypeter/redux-hello/commit/6e30c7404c85ac164f91e773882b49a21753deef)
-
-### 总结
-
-到目前为止，Redux 三大概念：Store/action/reducer 都已经了解了，然后通过 connect/Provider/mapStateToProps 来实现数据从 store 到组件的动态订阅也已经会了。这意味着 Redux 的核心思想已经完全介绍完毕。
