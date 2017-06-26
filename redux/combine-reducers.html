@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>第一节：学习git · GitBook</title>
+        <title>reducer 拆分 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="2-nodejs.html" />
+    <link rel="next" href="thunk.html" />
     
+    
+    <link rel="prev" href="connect.html" />
     
 
     </head>
@@ -114,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="1-git.html">
+        <li class="chapter " data-level="1.2.1" data-path="../react/git.html">
             
-                <a href="1-git.html">
+                <a href="../react/git.html">
             
                     
                     第一节：学习git
@@ -127,9 +129,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="2-nodejs.html">
+        <li class="chapter " data-level="1.2.2" data-path="../react/nodejs.html">
             
-                <a href="2-nodejs.html">
+                <a href="../react/nodejs.html">
             
                     
                     第二节：安装nodejs
@@ -140,9 +142,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="3-npm.html">
+        <li class="chapter " data-level="1.2.3" data-path="../react/npm.html">
             
-                <a href="3-npm.html">
+                <a href="../react/npm.html">
             
                     
                     第三节：npm命令
@@ -153,9 +155,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="4-es6.html">
+        <li class="chapter " data-level="1.2.4" data-path="../react/es6.html">
             
-                <a href="4-es6.html">
+                <a href="../react/es6.html">
             
                     
                     第四节：es6新增语法
@@ -166,9 +168,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="5-react.html">
+        <li class="chapter " data-level="1.2.5" data-path="../react/react.html">
             
-                <a href="5-react.html">
+                <a href="../react/react.html">
             
                     
                     第五节：react
@@ -179,9 +181,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="6-reactRouter.html">
+        <li class="chapter " data-level="1.2.6" data-path="../react/reactRouter.html">
             
-                <a href="6-reactRouter.html">
+                <a href="../react/reactRouter.html">
             
                     
                     第六节：reactRouter
@@ -192,9 +194,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="7-ajax.html">
+        <li class="chapter " data-level="1.2.7" data-path="../react/ajax.html">
             
-                <a href="7-ajax.html">
+                <a href="../react/ajax.html">
             
                     
                     第七节：ajax简单介绍
@@ -205,9 +207,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.8" data-path="8-ui.html">
+        <li class="chapter " data-level="1.2.8" data-path="../react/ui.html">
             
-                <a href="8-ui.html">
+                <a href="../react/ui.html">
             
                     
                     第八节：materialUI简单使用
@@ -218,9 +220,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.9" data-path="9-webpack.html">
+        <li class="chapter " data-level="1.2.9" data-path="../react/webpack.html">
             
-                <a href="9-webpack.html">
+                <a href="../react/webpack.html">
             
                     
                     第九节：搭建webpack
@@ -250,9 +252,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../redux/1-store.html">
+        <li class="chapter " data-level="1.3.1" data-path="store.html">
             
-                <a href="../redux/1-store.html">
+                <a href="store.html">
             
                     
                     Redux Store
@@ -263,9 +265,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../redux/2-connect.html">
+        <li class="chapter " data-level="1.3.2" data-path="connect.html">
             
-                <a href="../redux/2-connect.html">
+                <a href="connect.html">
             
                     
                     connect 订阅 store 数据
@@ -276,9 +278,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../redux/3-combine-reducers.html">
+        <li class="chapter active" data-level="1.3.3" data-path="combine-reducers.html">
             
-                <a href="../redux/3-combine-reducers.html">
+                <a href="combine-reducers.html">
             
                     
                     reducer 拆分
@@ -289,9 +291,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../redux/4-thunk.html">
+        <li class="chapter " data-level="1.3.4" data-path="thunk.html">
             
-                <a href="../redux/4-thunk.html">
+                <a href="thunk.html">
             
                     
                     redux-thunk
@@ -395,7 +397,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >第一节：学习git</a>
+        <a href=".." >reducer 拆分</a>
     </h1>
 </div>
 
@@ -410,26 +412,84 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h4 id="&#x6781;&#x7B80;sudo&#x547D;&#x4EE4;">&#x6781;&#x7B80;sudo&#x547D;&#x4EE4;</h4>
-<p><code>sudo apt-get install git curl atom</code>   &#x4E0B;&#x8F7D;git, curl, atom&#x8F6F;&#x4EF6;<br><code>sudo apt-get update</code>   &#x66F4;&#x65B0;</p>
-<h3 id="&#x57FA;&#x7840;git&#x547D;&#x4EE4;">&#x57FA;&#x7840;git&#x547D;&#x4EE4;</h3>
-<p><code>git clone [url]</code>   &#x514B;&#x9686;&#x5230;&#x672C;&#x5730;<br><code>git status</code>    &#x67E5;&#x770B;&#x4ED3;&#x5E93;&#x72B6;&#x6001;<br><code>git log</code>     &#x67E5;&#x770B;&#x4ED3;&#x5E93;&#x65E5;&#x5FD7;<br><code>git pull</code>   &#x62C9;&#x53D6;&#x8FDC;&#x7AEF;&#x66F4;&#x65B0;</p>
-<h5 id="&#x672C;&#x5730;&#x4FEE;&#x6539;&#x540E;&#x4E0A;&#x4F20;&#x66F4;&#x65B0;">&#x672C;&#x5730;&#x4FEE;&#x6539;&#x540E;&#x4E0A;&#x4F20;&#x66F4;&#x65B0;</h5>
-<p><code>git add .</code>  &#x6DFB;&#x52A0;&#x5230;git &#x6682;&#x65F6;&#x4FDD;&#x5B58;&#x4E0B;&#x6765;<br><code>git commit -m &apos;message&apos;</code>  &#x505A;&#x7248;&#x672C;<br><code>git push</code>   &#x63D0;&#x4EA4;</p>
-<h5 id="atom-&#x88C5;&#x5305;&#x547D;&#x4EE4;">atom &#x88C5;&#x5305;&#x547D;&#x4EE4;</h5>
-<p><code>apm install [packagename]</code></p>
-<pre><code>&#x88C5;&#x7684;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x5305;
-emmet  
-open-in-browser  
-autocomplete-paths  
-language-babel
-</code></pre><h4 id="&#x624B;&#x52A8;&#x521B;&#x5EFA;gitignore&#x91CC;&#x9762;&#x5199;&#x540D;&#x79F0;&#x5FFD;&#x7565;&#x4E0D;&#x60F3;&#x4E0A;&#x4F20;&#x7684;&#x6587;&#x4EF6;&#x6216;&#x6587;&#x4EF6;&#x5939;">&#x624B;&#x52A8;&#x521B;&#x5EFA;.gitignore&#x91CC;&#x9762;&#x5199;&#x540D;&#x79F0;,&#x5FFD;&#x7565;&#x4E0D;&#x60F3;&#x4E0A;&#x4F20;&#x7684;&#x6587;&#x4EF6;&#x6216;&#x6587;&#x4EF6;&#x5939;</h4>
-<h4 id="&#x672C;&#x5730;&#x4E0A;&#x4F20;">&#x672C;&#x5730;&#x4E0A;&#x4F20;</h4>
-<p><code>ssh-keygen</code>&#x547D;&#x4EE4;&#xFF0C;&#x751F;&#x6210;&#x7535;&#x8111;&#x94A5;&#x5319; <code>.put</code>&#x516C;&#x6709;,&#x5C06;&#x91CC;&#x9762;&#x5185;&#x5BB9;&#x590D;&#x5236;&#x5230;github&#x7684;SSH and GPG keys<br><code>git init</code> &#x521D;&#x59CB;&#x5316;&#x6210;&#x4E00;&#x4E2A;&#x4ED3;&#x5E93;<br><code>git remote add origin</code> &#x5730;&#x5740;<br><code>git push -u origin master</code>  &#x63D0;&#x4EA4;&#x7684;master&#x5206;&#x652F;</p>
-<h4 id="&#x5206;&#x652F;">&#x5206;&#x652F;</h4>
-<h5 id="&#x5207;&#x6362;&#x5206;&#x652F;&#x4E4B;&#x524D;&#x5FC5;&#x987B;&#x5168;&#x90E8;&#x505A;&#x6210;&#x7248;&#x672C;&#x624D;&#x80FD;&#x5207;&#x6362;&#x5206;&#x652F;">&#x5207;&#x6362;&#x5206;&#x652F;&#x4E4B;&#x524D;&#x5FC5;&#x987B;&#x5168;&#x90E8;&#x505A;&#x6210;&#x7248;&#x672C;&#x624D;&#x80FD;&#x5207;&#x6362;&#x5206;&#x652F;</h5>
-<p><code>git branch</code> &#x67E5;&#x770B;&#x6240;&#x6709;&#x5206;&#x652F;&#x548C;&#x5F53;&#x524D;&#x5206;&#x652F; <code>*</code>&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x5206;&#x652F;<br><code>git branch gh-pages</code> &#x521B;&#x5EFA;&#x65B0;&#x7684;gh-pages&#x5206;&#x652F;<br><code>git checkout gh-pages</code>  &#x5207;&#x6362;&#x5230;gh-pages&#x5206;&#x652F;<br><code>git push -u origin gh-pages</code> &#x5411;&#x8FDC;&#x7AEF;&#x63A8;&#x9001;gh-pages&#x5206;&#x652F;<br><code>git merge gh-pages</code> &#x628A;gh-pages&#x5206;&#x652F;&#x4E0A;&#x9886;&#x5148;&#x7684;&#x64CD;&#x4F5C;&#x62C9;&#x53D6;&#x8FC7;&#x6765;<br><code>git branch -d gh-pages</code> &#x5220;&#x9664;&#x672C;&#x5730;gh-pages&#x5206;&#x652F;&#xFF0C;&#x4E0D;&#x80FD;&#x5220;master&#x5206;&#x652F;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x80FD;&#x5220;&#x5F53;&#x524D;&#x6240;&#x5728;&#x5206;&#x652F;<br><code>git push origin :gh-pages</code>  &#x5220;&#x9664;&#x8FDC;&#x7AEF;&#x7684;gh-pages&#x5206;&#x652F;</p>
-<p><code>gh-pages</code>&#x662F;&#x4E00;&#x4E2A;&#x5341;&#x5206;&#x7279;&#x6B8A;&#x7684;&#x5206;&#x652F;&#xFF0C;&#x5185;&#x5BB9;&#x53EF;&#x4EE5;&#x88AB;&#x8BBF;&#x95EE;&#xFF0C;&#x5730;&#x5740;&#x4E3A;learnerty.github.io/&#x4ED3;&#x5E93;&#x540D;</p>
+                                <p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x53EA;&#x7528;&#x4E00;&#x4E2A; reducer &#xFF0C;&#x968F;&#x7740;&#x72B6;&#x6001;&#x6811;&#x53D8;&#x5927;&#xFF0C;reducer &#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x5F88;&#x590D;&#x6742;&#x3002;&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x8FDB;&#x884C; reducer &#x7684;&#x62C6;&#x5206;&#x5462;&#xFF1F;&#x8FD9;&#x5C31;&#x6D89;&#x53CA;&#x5230; rootReducer/combineReducers &#x8FD9;&#x4E9B;&#x6280;&#x5DE7;&#x4E86;&#x3002;</p>
+<p>&#x62C6;&#x5206;&#x540E;&#xFF0C;&#x8981;&#x8FBE;&#x6210;&#x4E24;&#x4E2A;&#x76EE;&#x6807;&#xFF1A;</p>
+<ul>
+<li>&#x6BCF;&#x4E2A; reducer &#x8D1F;&#x8D23;&#x4E00;&#x7C7B;&#x6570;&#x636E;&#xFF0C;&#x6240;&#x4EE5;&#x6BCF;&#x4E2A; reducer &#x90FD;&#x4E0D;&#x4F1A;&#x5F88;&#x5927;</li>
+<li>&#x6BCF;&#x4E2A; reducer &#x4FEE;&#x6539;&#x7684; state &#x503C;&#xFF0C;&#x90FD;<strong>&#x4E0D;&#x662F;</strong>&#x6574;&#x4E2A;&#x72B6;&#x6001;&#x6811;</li>
+</ul>
+<h3 id="&#x521B;&#x5EFA;-reducersindexjs-&#x6587;&#x4EF6;">&#x521B;&#x5EFA; reducers/index.js &#x6587;&#x4EF6;</h3>
+<pre><code>let defaultState = {
+  comments: [&apos;xxx1&apos;, &apos;hello2&apos;],
+  likes: 0
+}
+
+function rootReducer(state = defaultState, action) {
+  switch (action.type) {
+    case &apos;ADD_COMMENT&apos;:
+      return {...state, comments: [...state.comments, action.comment]};
+    case &apos;INCREMENT_LIKE&apos;:
+      return {...state, likes: state.likes + 1 }
+    default:
+      return state
+  }
+}
+
+export default rootReducer
+</code></pre><p>&#x521B;&#x5EFA;redux/store.js</p>
+<pre><code>import { createStore } from &apos;redux&apos;
+import rootReducer from &apos;./reducers&apos;
+
+let store = createStore(rootReducer)
+export default store
+</code></pre><h3 id="&#x62C6;&#x51FA;&#x4E24;&#x4E2A;-reducer">&#x62C6;&#x51FA;&#x4E24;&#x4E2A; reducer</h3>
+<p>&#x6BCF;&#x4E2A; reducer &#x7684; state &#x9ED8;&#x8BA4;&#x503C;&#x90FD;&#x53EA;&#x662F;&#x81EA;&#x5DF1;&#x5BF9;&#x5E94;&#x7684;&#x90A3;&#x4E00;&#x90E8;&#x5206;&#x6570;&#x636E;&#x3002;</p>
+<pre><code>import { combineReducers } from &apos;redux&apos;
+
+let comments = [&apos;xxx1&apos;, &apos;hello2&apos;]
+
+function commentReducer(state= comments, action) {
+  switch (action.type) {
+    case &apos;ADD_COMMENT&apos;:
+      return [...state, action.comment]
+    default:
+      return state
+  }
+}
+
+let likes = 0
+
+function likeReducer(state = likes, action) {
+  switch (action.type) {
+    case &apos;INCREMENT_LIKE&apos;:
+      return state + 1
+    default:
+      return state
+  }
+}
+
+const rootReducer = combineReducers({
+  comments: commentReducer,
+  likes: likeReducer
+})
+
+
+export default rootReducer
+</code></pre><p>&#x6CE8;&#x610F;&#xFF1A; combine &#x7684;&#x610F;&#x601D;&#x662F;&#x201C;&#x5408;&#x5E76;&#x201D;</p>
+<pre><code>const rootReducer = combineReducers({
+  comments: commentReducer,
+  likes: likeReducer
+})
+</code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x53C2;&#x6570;&#x4E2D;&#xFF0C;<code>comments</code> &#x662F;&#x9700;&#x8981;&#x88AB;&#x66F4;&#x65B0;&#x7684; state &#xFF0C;commentReducer &#x662F;&#x8D1F;&#x8D23;&#x66F4;&#x65B0;&#x5B83;&#x7684; reducer &#xFF0C;&#x540C;&#x7406; likes &#x548C; likeReducer &#x4E5F;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x5173;&#x7CFB;&#x3002;&#x6700;&#x7EC8;&#x7684;&#x6574;&#x4E2A; App &#x7684;&#x72B6;&#x6001;&#x6811;&#xFF0C;&#x5C31;&#x662F;</p>
+<pre><code>{
+  comments,
+  likes
+}
+</code></pre><p>&#x540E;&#x7EED;&#x5728;&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684; mapStateToProps(state) &#x51FD;&#x6570;&#x4E2D;&#x7684; state &#x5C31;&#x662F;&#x4E0A;&#x9762;&#x7684;&#x8FD9;&#x4E2A;&#x503C;&#x3002;</p>
+<h3 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h3>
+<ul>
+<li><a href="http://cn.redux.js.org/docs/recipes/reducers/UsingCombineReducers.html" target="_blank">&#x5B98;&#x65B9;&#x7684; combineReducers()&#x6587;&#x6863;</a></li>
+</ul>
 
                                 
                                 </section>
@@ -457,8 +517,12 @@ language-babel
 
             
                 
+                <a href="connect.html" class="navigation navigation-prev " aria-label="Previous page: connect 订阅 store 数据">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="2-nodejs.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 第二节：安装nodejs">
+                
+                <a href="thunk.html" class="navigation navigation-next " aria-label="Next page: redux-thunk">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -469,7 +533,7 @@ language-babel
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第一节：学习git","level":"1.2.1","depth":2,"next":{"title":"第二节：安装nodejs","level":"1.2.2","depth":2,"path":"react/2-nodejs.md","ref":"./react/2-nodejs.md","articles":[]},"previous":{"title":"[React学习]","level":"1.2","depth":1,"ref":"","articles":[{"title":"第一节：学习git","level":"1.2.1","depth":2,"path":"react/1-git.md","ref":"./react/1-git.md","articles":[]},{"title":"第二节：安装nodejs","level":"1.2.2","depth":2,"path":"react/2-nodejs.md","ref":"./react/2-nodejs.md","articles":[]},{"title":"第三节：npm命令","level":"1.2.3","depth":2,"path":"react/3-npm.md","ref":"./react/3-npm.md","articles":[]},{"title":"第四节：es6新增语法","level":"1.2.4","depth":2,"path":"react/4-es6.md","ref":"./react/4-es6.md","articles":[]},{"title":"第五节：react","level":"1.2.5","depth":2,"path":"react/5-react.md","ref":"./react/5-react.md","articles":[]},{"title":"第六节：reactRouter","level":"1.2.6","depth":2,"path":"react/6-reactRouter.md","ref":"./react/6-reactRouter.md","articles":[]},{"title":"第七节：ajax简单介绍","level":"1.2.7","depth":2,"path":"react/7-ajax.md","ref":"./react/7-ajax.md","articles":[]},{"title":"第八节：materialUI简单使用","level":"1.2.8","depth":2,"path":"react/8-ui.md","ref":"./react/8-ui.md","articles":[]},{"title":"第九节：搭建webpack","level":"1.2.9","depth":2,"path":"react/9-webpack.md","ref":"./react/9-webpack.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react/1-git.md","mtime":"2017-06-20T03:47:35.238Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-26T08:28:24.247Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"reducer 拆分","level":"1.3.3","depth":2,"next":{"title":"redux-thunk","level":"1.3.4","depth":2,"path":"redux/thunk.md","ref":"./redux/thunk.md","articles":[]},"previous":{"title":"connect 订阅 store 数据","level":"1.3.2","depth":2,"path":"redux/connect.md","ref":"./redux/connect.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"redux/combine-reducers.md","mtime":"2017-06-20T07:19:43.218Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-26T08:38:30.239Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
