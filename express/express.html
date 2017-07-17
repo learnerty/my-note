@@ -1,0 +1,651 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>浅谈express · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="mongodb.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [React学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../react/git.html">
+            
+                <a href="../react/git.html">
+            
+                    
+                    第一节：学习git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../react/nodejs.html">
+            
+                <a href="../react/nodejs.html">
+            
+                    
+                    第二节：安装nodejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../react/npm.html">
+            
+                <a href="../react/npm.html">
+            
+                    
+                    第三节：npm命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../react/es6.html">
+            
+                <a href="../react/es6.html">
+            
+                    
+                    第四节：es6新增语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../react/react.html">
+            
+                <a href="../react/react.html">
+            
+                    
+                    第五节：react
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../react/reactRouter.html">
+            
+                <a href="../react/reactRouter.html">
+            
+                    
+                    第六节：reactRouter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../react/ajax.html">
+            
+                <a href="../react/ajax.html">
+            
+                    
+                    第七节：ajax简单介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../react/ui.html">
+            
+                <a href="../react/ui.html">
+            
+                    
+                    第八节：materialUI简单使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../react/webpack.html">
+            
+                <a href="../react/webpack.html">
+            
+                    
+                    第九节：搭建webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    [Redux学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../redux/store.html">
+            
+                <a href="../redux/store.html">
+            
+                    
+                    Redux Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../redux/connect.html">
+            
+                <a href="../redux/connect.html">
+            
+                    
+                    connect 订阅 store 数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../redux/combine-reducers.html">
+            
+                <a href="../redux/combine-reducers.html">
+            
+                    
+                    reducer 拆分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../redux/thunk.html">
+            
+                <a href="../redux/thunk.html">
+            
+                    
+                    redux-thunk
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    [Vue学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../vue/vue.html">
+            
+                <a href="../vue/vue.html">
+            
+                    
+                    初试Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../vue/vue-router.html">
+            
+                <a href="../vue/vue-router.html">
+            
+                    
+                    vue-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../vue/vuex.html">
+            
+                <a href="../vue/vuex.html">
+            
+                    
+                    vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    [API制作]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="mongodb.html">
+            
+                <a href="mongodb.html">
+            
+                    
+                    mongodb简单命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="express.html">
+            
+                <a href="express.html">
+            
+                    
+                    浅谈express
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >浅谈express</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h3 id="&#x5B89;&#x88C5;express">&#x5B89;&#x88C5;express</h3>
+<p>&#x9879;&#x76EE;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x540D;&#x79F0;&#x4E0D;&#x80FD;&#x548C;&#x5305;&#x540D;&#x76F8;&#x540C;
+<code>npm install --save express</code></p>
+<h3 id="&#x521B;&#x5EFA;&#x4E00;&#x4E2A;indexjs&#x6587;&#x4EF6;">&#x521B;&#x5EFA;&#x4E00;&#x4E2A;index.js&#x6587;&#x4EF6;</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> express =  <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;express&apos;</span>)   <span class="hljs-comment">//&#x5BFC;&#x5165;express</span>
+<span class="hljs-keyword">const</span> app = express()
+
+app.listen(<span class="hljs-number">3000</span> ,() =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;running on port 3000...&apos;</span>))   <span class="hljs-comment">//&#x542F;&#x52A8;&#x4E00;&#x4E2A;3000&#x7AEF;&#x53E3;&#x670D;&#x52A1;&#x5668;,&#x6210;&#x529F;&#x6253;&#x5370;run...</span>
+</code></pre>
+<h4 id="&#x5728;applisten&#x4E0A;&#x5199;">&#x5728;app.listen&#x4E0A;&#x5199;</h4>
+<pre><code class="lang-js">app.get(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>)</span>{    <span class="hljs-comment">//get&#x8BF7;&#x6C42;&#xFF0C;&#x8BBF;&#x95EE;http://localhost:3000/  &#x540E;&#x7AEF;&#x5411;&#x524D;&#x7AEF;&#x6D4F;&#x89C8;&#x5668;&#x8FD4;&#x56DE;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;req&#x662F;&#x8BF7;&#x6C42;&#xFF0C;res&#x662F;&#x54CD;&#x5E94;</span>
+  res.send(<span class="hljs-string">&apos;Hello World&apos;</span>);
+})
+</code></pre>
+<h3 id="&#x5B89;&#x88C5;nodemon">&#x5B89;&#x88C5;nodemon</h3>
+<p>&#x80FD;&#x591F;&#x6301;&#x7EED;&#x76D1;&#x542C;&#xFF0C;&#x5982;&#x679C;&#x540E;&#x53F0;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x91CD;&#x542F;&#xFF0C;&#x542F;&#x52A8;&#x547D;&#x4EE4;<code>nodemon &#x6587;&#x4EF6;&#x540D;</code><br><code>npm install -g nodemon</code></p>
+<h2 id="express-&#x64CD;&#x4F5C;-mongodb">Express &#x64CD;&#x4F5C; MongoDB</h2>
+<h3 id="&#x5B89;&#x88C5;-mongoose-&#x5305;">&#x5B89;&#x88C5; Mongoose &#x5305;</h3>
+<p>&#x901A;&#x8FC7; mongoose npm &#x5305;&#xFF0C;&#x8BA9; Express &#x5E94;&#x7528;&#x548C; MongoDB &#x5EFA;&#x7ACB;&#x8FDE;&#x63A5;<br><code>npm install --save mongoose</code></p>
+<h3 id="&#x5BFC;&#x5165;mongoose">&#x5BFC;&#x5165;mongoose</h3>
+<p><code>const mongoose = require(&apos;mongoose&apos;)</code></p>
+<h3 id="&#x94FE;&#x63A5;mongodb">&#x94FE;&#x63A5;MongoDB</h3>
+<p>localhost:27017&#x662F;mongodb&#x542F;&#x52A8;&#x65F6;&#x9ED8;&#x8BA4;&#x7684;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;express-kiss-api&#x662F;&#x9879;&#x76EE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x540D;&#x79F0;<code>mongoose.connect(&apos;mongodb://localhost:27017/express-kiss-api&apos;)</code></p>
+<h3 id="&#x5224;&#x65AD;&#x662F;&#x5426;&#x94FE;&#x63A5;&#x6210;&#x529F;">&#x5224;&#x65AD;&#x662F;&#x5426;&#x94FE;&#x63A5;&#x6210;&#x529F;</h3>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> db = mongoose.connection;  <span class="hljs-comment">//&#x83B7;&#x53D6;&#x94FE;&#x63A5;&#x5B58;&#x5230;db</span>
+db.on(<span class="hljs-string">&apos;error&apos;</span>, <span class="hljs-built_in">console</span>.log);   <span class="hljs-comment">//&#x5931;&#x8D25;&#x6253;&#x5370;&#x9519;&#x8BEF;</span>
+db.once(<span class="hljs-string">&apos;open&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{   <span class="hljs-comment">//&#x6210;&#x529F;&#x6267;&#x884C;...</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;success!&apos;</span>)
+});
+</code></pre>
+<h3 id="&#x521B;&#x5EFA;&#x6570;&#x636E;&#x6A21;&#x578B;&#x6587;&#x4EF6;">&#x521B;&#x5EFA;&#x6570;&#x636E;&#x6A21;&#x578B;&#x6587;&#x4EF6;</h3>
+<h4 id="&#x3000;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;-modelspostjs">&#x3000;&#x65B0;&#x5EFA;&#x6587;&#x4EF6; models/post.js</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> mongoose = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;mongoose&apos;</span>);   <span class="hljs-comment">//&#x5BFC;&#x5165; mongoose &#x529F;&#x80FD;&#x6A21;&#x5757;</span>
+<span class="hljs-keyword">const</span> Schema = mongoose.Schema;    <span class="hljs-comment">//&#x8C03;&#x7528;&#x5B83;&#x63D0;&#x4F9B;&#x7684; Schema() &#x63A5;&#x53E3;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684; schema</span>
+<span class="hljs-keyword">const</span> PostSchema = <span class="hljs-keyword">new</span> Schema(    <span class="hljs-comment">//&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; PostSchema &#x7684; schema,&#x5305;&#x542B;&#x4E09;&#x4E2A;&#x5B57;&#x6BB5;category,title,content</span>
+  {
+    category: { type: <span class="hljs-built_in">String</span> },
+    title: { type: <span class="hljs-built_in">String</span>, required: <span class="hljs-literal">true</span> },    <span class="hljs-comment">//title&#x6570;&#x636E;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;</span>
+    content: { type: <span class="hljs-built_in">String</span> }
+  },
+  { timestamps: <span class="hljs-literal">true</span> }  <span class="hljs-comment">//&#x9009;&#x9879; timestamps &#x7684;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A; true&#xFF0C;&#x5219;&#x81EA;&#x52A8;&#x7ED9;&#x6240;&#x6620;&#x5C04;&#x96C6;&#x5408;&#x6DFB;&#x52A0; createdAt &#x548C; updatedAt &#x4E24;&#x4E2A;&#x5B57;&#x6BB5;</span>
+);
+<span class="hljs-built_in">module</span>.exports = mongoose.model(<span class="hljs-string">&apos;Post&apos;</span>, PostSchema);  <span class="hljs-comment">//&#x901A;&#x8FC7; Mongoose &#x7684; model() &#x65B9;&#x6CD5;&#x628A;&#x4E00;&#x4E2A; schema &#x7F16;&#x8BD1;&#x6210;&#x4E00;&#x4E2A; model&#xFF0C;&#x4E00;&#x4E2A; model &#x5B9E;&#x4F8B;&#x4F1A;&#x5BF9;&#x5E94;&#x6620;&#x5C04;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#xFF0C;&#x8FD9;&#x4E2A; model() &#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570; Post &#x5219;&#x662F;&#x6620;&#x5C04;&#x96C6;&#x5408;&#x540D;&#x5B57;&#x7684;&#x5355;&#x6570;&#x5F62;&#x5F0F;&#xFF0C;&#x6240;&#x4EE5; PostSchema &#x6620;&#x5C04;&#x96C6;&#x5408;&#x7684;&#x540D;&#x5B57;&#x662F; posts&#x3002;&#x4E0A;&#x8FF0;&#x4EE3;&#x7801;&#x8FD8;&#x628A;&#x6784;&#x5EFA;&#x6210;&#x7684; Post Model &#x5BFC;&#x51FA;&#x4F9B;&#x5916;&#x90E8;&#x5176;&#x5B83;&#x6587;&#x4EF6;&#x4F7F;&#x7528;&#x3002;</span>
+</code></pre>
+<h4 id="&#x6253;&#x5F00;indexjs">&#x6253;&#x5F00;index.js</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Post = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./models/post&apos;</span>)   <span class="hljs-comment">//&#x5BFC;&#x5165;post&#x6570;&#x636E;&#x6A21;&#x578B;&#x6587;&#x4EF6;</span>
+
+db.once(<span class="hljs-string">&apos;open&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">let</span> post = <span class="hljs-keyword">new</span> Post({title: <span class="hljs-string">&apos;mongoose usage&apos;</span>})  <span class="hljs-comment">//&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#xFF0C;&#x586B;&#x5165;title</span>
+  post.save(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>)</span>{    <span class="hljs-comment">//&#x4FDD;&#x5B58;&#x5230;&#x6570;&#x636E;&#x5E93;</span>
+    <span class="hljs-keyword">if</span>(err) <span class="hljs-built_in">console</span>.log(err)
+  })
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;success!&apos;</span>)
+})
+</code></pre>
+<h3 id="&#x6784;&#x5EFA;&#x4E00;&#x5957;-restful-api">&#x6784;&#x5EFA;&#x4E00;&#x5957; RESTful API</h3>
+<h4 id="&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x6587;&#x7AE0;">&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x6587;&#x7AE0;</h4>
+<pre><code class="lang-js">app.get(<span class="hljs-string">&apos;/posts&apos;</span>, (req, res) =&gt; {   <span class="hljs-comment">//&#x53D1;&#x9001;get&#x8BF7;&#x6C42;&#x5230;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;/posts</span>
+  Post.find().sort({<span class="hljs-string">&apos;createdAt&apos;</span>: <span class="hljs-number">-1</span>}).exec(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, posts</span>) </span>{  <span class="hljs-comment">//Post&#x4E3A;&#x4E0A;&#x9762;&#x5BFC;&#x5165;&#x7684;&#x6570;&#x636E;&#x6A21;&#x578B;&#x6587;&#x4EF6;&#xFF0C;&#x67E5;&#x5BFB;&#x6240;&#x6709;&#x6570;&#x636E;&#x9006;&#x5E8F;&#x6392;&#x5E8F;&#xFF0C;&#x6267;&#x884C;&#x5B8C;&#x8C03;&#x7528;&#x51FD;&#x6570;</span>
+    <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">return</span> res.status(<span class="hljs-number">500</span>).json({error: err.message})
+    res.json({ posts })
+  })
+})
+</code></pre>
+<h4 id="&#x67E5;&#x627E;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;">&#x67E5;&#x627E;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;</h4>
+<pre><code class="lang-js">app.get(<span class="hljs-string">&apos;/post/:id&apos;</span>, (req, res) =&gt; {
+  Post.find({_id: req.params.id}).exec(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, post</span>) </span>{   <span class="hljs-comment">//req.params.id&#x63A5;&#x6536;&#x524D;&#x53F0;&#x53D1;&#x6765;&#x7684;&#x8BF7;&#x6C42;id</span>
+    <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">return</span> res.status(<span class="hljs-number">500</span>).json({error: err.message})
+    res.json({ post })
+  })
+})
+</code></pre>
+<h4 id="&#x6DFB;&#x52A0;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;">&#x6DFB;&#x52A0;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;</h4>
+<p>&#x9996;&#x5148;&#x8981;&#x88C5;&#x4E00;&#x4E2A;&#x5305;<br><code>npm i --save body-parser</code><br>&#x7136;&#x540E;&#x6DFB;&#x52A0;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> bodyParser = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;body-parser&apos;</span>)   <span class="hljs-comment">//&#x5BFC;&#x5165;body-parser&#x5305;</span>
+app.use(bodyParser.json())   <span class="hljs-comment">//&#x6DFB;&#x52A0;&#x4E2D;&#x95F4;&#x952E;</span>
+
+app.post(<span class="hljs-string">&apos;/post&apos;</span>, (req, res) =&gt; {   <span class="hljs-comment">//&#x53D1;&#x9001;post&#x8BF7;&#x6C42;</span>
+  <span class="hljs-keyword">var</span> post = <span class="hljs-keyword">new</span> Post(req.body);   <span class="hljs-comment">//&#x5B9E;&#x4F8B;&#x5316;post&#x5BF9;&#x8C61;&#xFF0C;&#x4F20;&#x5165;&#x8BF7;&#x6C42;(req)&#x7684;body&#x7684;&#x5185;&#x5BB9;</span>
+  post.save(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>)</span>{    <span class="hljs-comment">//&#x5411;&#x6570;&#x636E;&#x5E93;&#x6DFB;&#x52A0;&#x6570;&#x636E;</span>
+    <span class="hljs-keyword">if</span>(err) <span class="hljs-built_in">console</span>.log(err)
+  })
+} )
+</code></pre>
+<h4 id="&#x4FEE;&#x6539;&#x6587;&#x7AE0;&#x5185;&#x5BB9;">&#x4FEE;&#x6539;&#x6587;&#x7AE0;&#x5185;&#x5BB9;</h4>
+<pre><code class="lang-js">app.put(<span class="hljs-string">&apos;/post/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{   <span class="hljs-comment">//&#x53D1;&#x9001;put&#x8BF7;&#x6C42;</span>
+    <span class="hljs-keyword">if</span> (req.body.title === <span class="hljs-string">&apos;&apos;</span>) <span class="hljs-keyword">return</span> res.status(<span class="hljs-number">400</span>).json({error: <span class="hljs-string">&apos;&#x6587;&#x7AE0;&#x6807;&#x9898;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#xFF01;&apos;</span>})   <span class="hljs-comment">//&#x5982;&#x679C;&#x8BF7;&#x6C42;&#x7684;&#x6807;&#x9898;&#x4E3A;&#x7A7A;&#xFF0C;&#x8FD4;&#x56DE;&#x72B6;&#x6001;&#x7801;400&#xFF0C;json&#x5B57;&#x7B26;&#x4E32;&#xFF1A;&#x6587;&#x7AE0;&#x6807;&#x9898;&#x4E0D;&#x80FD;&#x4E3A;&#x7A7A;&#xFF01;</span>
+    Post.findById({_id: req.params.id}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, post</span>) </span>{  <span class="hljs-comment">//&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x67E5;&#x627E;id&#x7B49;&#x4E8E;&#x8BF7;&#x6C42;&#x4FEE;&#x6539;&#x7684;&#x6587;&#x7AE0;id</span>
+      <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">return</span> res.status(<span class="hljs-number">500</span>).json({error:  err.message})
+      <span class="hljs-keyword">for</span> (prop <span class="hljs-keyword">in</span> req.body) {   <span class="hljs-comment">//&#x904D;&#x5386;&#x8BF7;&#x6C42;&#x7684;body&#x5185;&#x5BB9;</span>
+        post[prop] = req.body[prop]   <span class="hljs-comment">//&#x628A;&#x904D;&#x5386;&#x5230;&#x7684;&#x8981;&#x4FEE;&#x6539;&#x7684;&#x5185;&#x5BB9;&#x66FF;&#x6362;&#x5230;&#x5B9E;&#x4F8B;&#x5316;&#x7684;post&#x5BF9;&#x8C61;&#x4E2D;</span>
+      }
+      post.save(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>) </span>{   <span class="hljs-comment">//&#x4FDD;&#x5B58;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x5185;&#x5BB9;</span>
+        <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">return</span> res.status(<span class="hljs-number">500</span>).json({error: err.message})
+        res.json({
+          message: <span class="hljs-string">&apos;&#x6587;&#x7AE0;&#x66F4;&#x65B0;&#x6210;&#x529F;&#x4E86;&#xFF01;&apos;</span>
+        })
+      })
+    })
+  })
+</code></pre>
+<h4 id="&#x5220;&#x9664;&#x6587;&#x7AE0;">&#x5220;&#x9664;&#x6587;&#x7AE0;</h4>
+<pre><code class="lang-js">app.delete(<span class="hljs-string">&apos;/post/:id&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{   <span class="hljs-comment">//&#x53D1;&#x9001;delete&#x8BF7;&#x6C42;</span>
+  Post.findById({_id: req.params.id}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err, post</span>) </span>{   <span class="hljs-comment">//&#x67E5;&#x627E;id&#x76F8;&#x540C;&#x7684;</span>
+    <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">return</span> res.status(<span class="hljs-number">500</span>).json({error: err.message})
+    post.remove(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">err</span>)</span>{    <span class="hljs-comment">//&#x5220;&#x9664;&#x627E;&#x5230;&#x7684;&#x6570;&#x636E;</span>
+      <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">return</span> res.status(<span class="hljs-number">500</span>).json({error: err.message})
+      res.json({ message: <span class="hljs-string">&apos;&#x6587;&#x7AE0;&#x5DF2;&#x7ECF;&#x5220;&#x9664;&#x4E86;&#xFF01;&apos;</span> })
+    })
+  })
+})
+</code></pre>
+<h3 id="&#x89E3;&#x51B3;&#x8DE8;&#x57DF;&#x8BF7;&#x6C42;&#x7684;&#x95EE;&#x9898;">&#x89E3;&#x51B3;&#x8DE8;&#x57DF;&#x8BF7;&#x6C42;&#x7684;&#x95EE;&#x9898;</h3>
+<p>&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x5904;&#x7406;&#xFF0C;&#x5148;&#x5B89;&#x88C5;&#x5305;<br><code>npm i  --save cors</code><br>&#x7136;&#x540E;&#x5728;index.js&#x6587;&#x4EF6;&#x4E2D;&#x6DFB;&#x52A0;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> cors = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;cors&apos;</span>)
+app.use(cors())
+</code></pre>
+<p>&#x5C31;&#x53EF;&#x4EE5;&#x4E86;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mongodb.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: mongodb简单命令">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"浅谈express","level":"1.5.2","depth":2,"previous":{"title":"mongodb简单命令","level":"1.5.1","depth":2,"path":"express/mongodb.md","ref":"./express/mongodb.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"express/express.md","mtime":"2017-07-17T01:33:51.205Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-17T01:37:23.642Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
