@@ -20,3 +20,11 @@
   - [初试Vue](./vue/vue.md)
   - [vue-router](./vue/vue-router.md)
   - [vuex](./vue/vuex.md)
+* [API制作]
+  - [mongodb简单命令](./express/mongodb.md)
+  - [浅谈express](./express/express.md)
+* [canvas学习]
+  - [canvas常用方法](./canvas/1-canvas.md)
+* [ReactNative学习]
+  - [初学ReactNative](./react-native/1-reactNative.md)
+  - [ReactNative进阶一](./react-native/2-reactNative.md)
