@@ -7,7 +7,7 @@
         <title>mongodb简单命令 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="generator" content="GitBook 3.2.3">
         
         
         
@@ -410,6 +410,83 @@
             
         </li>
     
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    [canvas学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../canvas/1-canvas.html">
+            
+                <a href="../canvas/1-canvas.html">
+            
+                    
+                    canvas常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    [ReactNative学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../react-native/1-reactNative.html">
+            
+                <a href="../react-native/1-reactNative.html">
+            
+                    
+                    初学ReactNative
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../react-native/2-reactNative.html">
+            
+                <a href="../react-native/2-reactNative.html">
+            
+                    
+                    ReactNative进阶一
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -487,9 +564,14 @@
 <h4 id="&#x63D2;&#x5165;&#x96C6;&#x5408;&#x6570;&#x636E;">&#x63D2;&#x5165;&#x96C6;&#x5408;&#x6570;&#x636E;</h4>
 <p><code>db.users.insert({name:&apos;tian&apos;,age:23})</code>  users&#x662F;&#x96C6;&#x5408;&#x7684;&#x540D;&#x79F0;</p>
 <h4 id="&#x67E5;&#x8BE2;&#x96C6;&#x5408;&#x5185;&#x5BB9;">&#x67E5;&#x8BE2;&#x96C6;&#x5408;&#x5185;&#x5BB9;</h4>
-<p><code>db.users.find({name:&apos;tian&apos;})</code> &#x67E5;&#x8BE2;users&#x96C6;&#x5408;&#x5185;&#x7684;&#x5185;&#x5BB9;&#xFF0C;find&#x5185;&#x4F20;&#x5165;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#xFF0C;&#x4E0D;&#x4F20;&#x9ED8;&#x8BA4;&#x67E5;&#x627E;&#x5168;&#x90E8;</p>
-<h4 id="&#x5220;&#x9664;&#x96C6;&#x5408;&#x6570;&#x636E;">&#x5220;&#x9664;&#x96C6;&#x5408;&#x6570;&#x636E;</h4>
-<p><code>db.users.remove({name:&apos;tian&apos;})</code> &#x4F20;&#x5165;&#x4E00;&#x4E2A;{}&#x7A7A;&#x6761;&#x4EF6;&#x5220;&#x9664;&#x6240;&#x6709;</p>
+<p><code>db.users.find({name:&apos;tian&apos;})</code> &#x67E5;&#x8BE2;users&#x96C6;&#x5408;&#x5185;&#x7684;&#x5185;&#x5BB9;&#xFF0C;find&#x5185;&#x4F20;&#x5165;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#xFF0C;&#x4E0D;&#x4F20;&#x9ED8;&#x8BA4;&#x67E5;&#x627E;&#x5168;&#x90E8;<br><code>db.users.find({name:&apos;tian&apos;}).explain()</code> &#x67E5;&#x8BE2;name&#x4E3A;tian&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;<br><code>db.users.ensureIndex({&quot;name&quot;: 1})</code> &#x7ED9;name&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7D22;&#x5F15;,1&#x662F;&#x5347;&#x5E8F;,-1&#x662F;&#x964D;&#x5E8F;   </p>
+<ol>
+<li>ensureIndex()&#x521B;&#x5EFA;&#x7D22;&#x5F15;</li>
+<li>getIndexes()&#x67E5;&#x770B;&#x7D22;&#x5F15;</li>
+<li>dropIndex&#x5220;&#x9664;&#x7D22;&#x5F15;
+<strong>&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x662F;&#x4E5F;&#x662F;&#x6709;&#x4EE3;&#x4EF7;&#x7684;&#xFF1A;&#x5BF9;&#x4E8E;&#x6DFB;&#x52A0;&#x7684;&#x6BCF;&#x4E00;&#x6761;&#x7D22;&#x5F15;&#xFF0C;&#x6BCF;&#x6B21;&#x5199;&#x64CD;&#x4F5C;&#xFF08;&#x63D2;&#x5165;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x5220;&#x9664;&#xFF09;&#x90FD;&#x5C06;&#x8017;&#x8D39;&#x66F4;&#x591A;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#xFF0C;&#x5F53;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#xFF0C;&#x4E0D;&#x4EC5;&#x8981;&#x66F4;&#x65B0;&#x6587;&#x6863;&#xFF0C;&#x8FD8;&#x8981;&#x66F4;&#x65B0;&#x7EA7;&#x96C6;&#x5408;&#x4E0A;&#x7684;&#x6240;&#x6709;&#x7D22;&#x5F15;&#x3002;&#x56E0;&#x6B64;&#xFF0C;mongodb&#x9650;&#x5236;&#x6BCF;&#x4E2A;&#x96C6;&#x5408;&#x6700;&#x591A;&#x6709;64&#x4E2A;&#x7D22;&#x5F15;&#x3002;&#x901A;&#x5E38;&#xFF0C;&#x5728;&#x4E00;&#x4E2A;&#x7279;&#x5B9A;&#x7684;&#x96C6;&#x5408;&#x4E0A;&#xFF0C;&#x4E0D;&#x5E94;&#x8BE5;&#x62E5;&#x6709;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x7D22;&#x5F15;&#x3002;</strong><h4 id="&#x5220;&#x9664;&#x96C6;&#x5408;&#x6570;&#x636E;">&#x5220;&#x9664;&#x96C6;&#x5408;&#x6570;&#x636E;</h4>
+<code>db.users.remove({name:&apos;tian&apos;})</code> &#x4F20;&#x5165;&#x4E00;&#x4E2A;{}&#x7A7A;&#x6761;&#x4EF6;&#x5220;&#x9664;&#x6240;&#x6709;</li>
+</ol>
 <h4 id="&#x66F4;&#x65B0;&#x6570;&#x636E;">&#x66F4;&#x65B0;&#x6570;&#x636E;</h4>
 <p><code>db.users.update({name:&apos;tian&apos;},{$set:{age:22}})</code> &#x66F4;&#x65B0;name&#x4E3A;tian&#x7684;age&#x4E3A;22,&#x4E5F;&#x53EF;&#x4EE5;&#x589E;&#x52A0;&#x4E0D;&#x5B58;&#x5728;&#x7684;&#x5C5E;&#x6027;</p>
 <h4 id="save&#x5C5E;&#x6027;">save()&#x5C5E;&#x6027;</h4>
@@ -501,7 +583,30 @@
 <p><code>db.users.find().skip(2)</code>  &#x8DF3;&#x8FC7;&#x4E24;&#x6761;<br><code>db.users.find().skip(1).limit(1)</code>  &#x8DF3;&#x8FC7;&#x4E00;&#x6761;&#x67E5;&#x4E00;&#x6761;</p>
 <h4 id="&#x5220;&#x9664;&#x96C6;&#x5408;">&#x5220;&#x9664;&#x96C6;&#x5408;</h4>
 <p><code>db.users.drop()</code></p>
-
+<h4 id="&#x6761;&#x4EF6;&#x64CD;&#x4F5C;&#x7B26;">&#x6761;&#x4EF6;&#x64CD;&#x4F5C;&#x7B26;</h4>
+<pre><code>$or&#x3000;&#x3000;&#x3000;&#x3000;&#x6216;&#x5173;&#x7CFB;
+$nor&#x3000;&#x3000;&#x3000; &#x6216;&#x5173;&#x7CFB;&#x53D6;&#x53CD;
+$gt&#x3000;&#x3000;&#x3000;&#x3000;&#x5927;&#x4E8E;
+$gte&#x3000;&#x3000;&#x3000; &#x5927;&#x4E8E;&#x7B49;&#x4E8E;
+$lt&#x3000;&#x3000;&#x3000;&#x3000; &#x5C0F;&#x4E8E;
+$lte&#x3000;&#x3000;&#x3000;  &#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;
+$ne            &#x4E0D;&#x7B49;&#x4E8E;
+$in             &#x5728;&#x591A;&#x4E2A;&#x503C;&#x8303;&#x56F4;&#x5185;
+$nin           &#x4E0D;&#x5728;&#x591A;&#x4E2A;&#x503C;&#x8303;&#x56F4;&#x5185;
+$all            &#x5339;&#x914D;&#x6570;&#x7EC4;&#x4E2D;&#x591A;&#x4E2A;&#x503C;
+$regex&#x3000;&#x3000;&#x6B63;&#x5219;&#xFF0C;&#x7528;&#x4E8E;&#x6A21;&#x7CCA;&#x67E5;&#x8BE2;
+$size&#x3000;&#x3000;&#x3000;&#x5339;&#x914D;&#x6570;&#x7EC4;&#x5927;&#x5C0F;
+$maxDistance&#x3000;&#x3000;&#x8303;&#x56F4;&#x67E5;&#x8BE2;&#xFF0C;&#x8DDD;&#x79BB;&#xFF08;&#x57FA;&#x4E8E;LBS&#xFF09;
+$mod&#x3000;&#x3000;   &#x53D6;&#x6A21;&#x8FD0;&#x7B97;
+$near&#x3000;&#x3000;&#x3000;&#x90BB;&#x57DF;&#x67E5;&#x8BE2;&#xFF0C;&#x67E5;&#x8BE2;&#x9644;&#x8FD1;&#x7684;&#x4F4D;&#x7F6E;&#xFF08;&#x57FA;&#x4E8E;LBS&#xFF09;
+$exists&#x3000;&#x3000;  &#x5B57;&#x6BB5;&#x662F;&#x5426;&#x5B58;&#x5728;
+$elemMatch&#x3000;&#x3000;&#x5339;&#x914D;&#x5185;&#x6570;&#x7EC4;&#x5185;&#x7684;&#x5143;&#x7D20;
+$within&#x3000;&#x3000;&#x8303;&#x56F4;&#x67E5;&#x8BE2;&#xFF08;&#x57FA;&#x4E8E;LBS&#xFF09;
+$box&#x3000;&#x3000;&#x3000; &#x8303;&#x56F4;&#x67E5;&#x8BE2;&#xFF0C;&#x77E9;&#x5F62;&#x8303;&#x56F4;&#xFF08;&#x57FA;&#x4E8E;LBS&#xFF09;
+$center       &#x8303;&#x56F4;&#x9192;&#x8BE2;&#xFF0C;&#x5706;&#x5F62;&#x8303;&#x56F4;&#xFF08;&#x57FA;&#x4E8E;LBS&#xFF09;
+$centerSphere&#x3000;&#x3000;&#x8303;&#x56F4;&#x67E5;&#x8BE2;&#xFF0C;&#x7403;&#x5F62;&#x8303;&#x56F4;&#xFF08;&#x57FA;&#x4E8E;LBS&#xFF09;
+$slice&#x3000;&#x3000;&#x3000;&#x3000;&#x67E5;&#x8BE2;&#x5B57;&#x6BB5;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF08;&#x6BD4;&#x5982;&#x4ECE;&#x7B2C;&#x51E0;&#x4E2A;&#x4E4B;&#x540E;&#xFF0C;&#x7B2C;N&#x5230;&#x7B2C;M&#x4E2A;&#x5143;&#x7D20;&#xFF09;
+</code></pre>
                                 
                                 </section>
                             
@@ -540,7 +645,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"mongodb简单命令","level":"1.5.1","depth":2,"next":{"title":"浅谈express","level":"1.5.2","depth":2,"path":"express/express.md","ref":"./express/express.md","articles":[]},"previous":{"title":"[API制作]","level":"1.5","depth":1,"ref":"","articles":[{"title":"mongodb简单命令","level":"1.5.1","depth":2,"path":"express/mongodb.md","ref":"./express/mongodb.md","articles":[]},{"title":"浅谈express","level":"1.5.2","depth":2,"path":"express/express.md","ref":"./express/express.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"express/mongodb.md","mtime":"2017-07-17T01:33:19.890Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-17T01:37:23.642Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"mongodb简单命令","level":"1.5.1","depth":2,"next":{"title":"浅谈express","level":"1.5.2","depth":2,"path":"express/express.md","ref":"./express/express.md","articles":[]},"previous":{"title":"[API制作]","level":"1.5","depth":1,"ref":"","articles":[{"title":"mongodb简单命令","level":"1.5.1","depth":2,"path":"express/mongodb.md","ref":"./express/mongodb.md","articles":[]},{"title":"浅谈express","level":"1.5.2","depth":2,"path":"express/express.md","ref":"./express/express.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"express/mongodb.md","mtime":"2017-07-26T04:47:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-24T07:52:10.856Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

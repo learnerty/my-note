@@ -1,0 +1,807 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ReactNative进阶一 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="1-reactNative.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    首页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [React学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../react/git.html">
+            
+                <a href="../react/git.html">
+            
+                    
+                    第一节：学习git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../react/nodejs.html">
+            
+                <a href="../react/nodejs.html">
+            
+                    
+                    第二节：安装nodejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../react/npm.html">
+            
+                <a href="../react/npm.html">
+            
+                    
+                    第三节：npm命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../react/es6.html">
+            
+                <a href="../react/es6.html">
+            
+                    
+                    第四节：es6新增语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../react/react.html">
+            
+                <a href="../react/react.html">
+            
+                    
+                    第五节：react
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../react/reactRouter.html">
+            
+                <a href="../react/reactRouter.html">
+            
+                    
+                    第六节：reactRouter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../react/ajax.html">
+            
+                <a href="../react/ajax.html">
+            
+                    
+                    第七节：ajax简单介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../react/ui.html">
+            
+                <a href="../react/ui.html">
+            
+                    
+                    第八节：materialUI简单使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../react/webpack.html">
+            
+                <a href="../react/webpack.html">
+            
+                    
+                    第九节：搭建webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    [Redux学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../redux/store.html">
+            
+                <a href="../redux/store.html">
+            
+                    
+                    Redux Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../redux/connect.html">
+            
+                <a href="../redux/connect.html">
+            
+                    
+                    connect 订阅 store 数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../redux/combine-reducers.html">
+            
+                <a href="../redux/combine-reducers.html">
+            
+                    
+                    reducer 拆分
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../redux/thunk.html">
+            
+                <a href="../redux/thunk.html">
+            
+                    
+                    redux-thunk
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    [Vue学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../vue/vue.html">
+            
+                <a href="../vue/vue.html">
+            
+                    
+                    初试Vue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../vue/vue-router.html">
+            
+                <a href="../vue/vue-router.html">
+            
+                    
+                    vue-router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../vue/vuex.html">
+            
+                <a href="../vue/vuex.html">
+            
+                    
+                    vuex
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    [API制作]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../express/mongodb.html">
+            
+                <a href="../express/mongodb.html">
+            
+                    
+                    mongodb简单命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../express/express.html">
+            
+                <a href="../express/express.html">
+            
+                    
+                    浅谈express
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    [canvas学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../canvas/1-canvas.html">
+            
+                <a href="../canvas/1-canvas.html">
+            
+                    
+                    canvas常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    [ReactNative学习]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="1-reactNative.html">
+            
+                <a href="1-reactNative.html">
+            
+                    
+                    初学ReactNative
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7.2" data-path="2-reactNative.html">
+            
+                <a href="2-reactNative.html">
+            
+                    
+                    ReactNative进阶一
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ReactNative进阶一</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x770B;&#x4E00;&#x770B;&#x8FDB;&#x9636;&#x7684;&#x4E00;&#x4E9B;&#x77E5;&#x8BC6;</p>
+<h2 id="&#x4F7F;&#x7528;&#x5BFC;&#x822A;&#x5668;&#x8DF3;&#x8F6C;&#x9875;&#x9762;">&#x4F7F;&#x7528;&#x5BFC;&#x822A;&#x5668;&#x8DF3;&#x8F6C;&#x9875;&#x9762;</h2>
+<p>ReactNative&#x4E2D;&#x73B0;&#x6709;&#x7684;&#x51E0;&#x4E2A;&#x5BFC;&#x822A;&#x7EC4;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x521A;&#x521A;&#x5F00;&#x59CB;&#x63A5;&#x89E6;ReactNative&#xFF0C;&#x90A3;&#x4E48;&#x76F4;&#x63A5;&#x9009;&#x62E9;<code>React Navigation</code>&#x5C31;&#x597D;&#x3002;&#x5982;&#x679C;&#x4F60;&#x53EA;&#x9488;&#x5BF9;iOS&#x5E73;&#x53F0;&#x5F00;&#x53D1;&#xFF0C;&#x5E76;&#x4E14;&#x60F3;&#x548C;&#x7CFB;&#x7EDF;&#x539F;&#x751F;&#x5916;&#x89C2;&#x4E00;&#x81F4;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x9009;&#x62E9;<code>NavigatorIOS</code>&#x3002;&#x9664;&#x4E86;&#x8FD9;&#x4E24;&#x4E2A;&#x5916;&#xFF0C;&#x8FD8;&#x6709;<code>Navigator</code>&#xFF0C;&#x4F46;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x8001;&#x7EC4;&#x4EF6;&#x6B63;&#x5728;&#x9010;&#x6E10;&#x88AB;<code>React Navigation</code>&#x66FF;&#x4EE3;&#xFF0C;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF0C;&#x53EA;&#x9700;&#x4E86;&#x89E3;&#x5373;&#x53EF;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x5DF2;&#x7ECF;&#x5B8C;&#x5168;&#x88AB;&#x5F03;&#x7528;&#x7684;<code>NavigationExperimental</code>&#x7EC4;&#x4EF6;&#x3002;</p>
+<h3 id="react-navigation">React Navigation</h3>
+<p>&#x8FD9;&#x662F;&#x4E3B;&#x63A8;&#x7684;&#x4E00;&#x4E2A;&#x5BFC;&#x822A;&#x5E93;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x6B64;&#x5E93;&#x3002;<br><code>yarn add react-navigation</code>&#x6216;<code>npm install react-navigation --save</code><br>&#x8BE5;&#x5E93;&#x5305;&#x542B;&#x4E09;&#x7C7B;&#x7EC4;&#x4EF6;&#xFF1A;<br>&#xFF08;1&#xFF09;StackNavigator&#xFF1A;&#x7C7B;&#x4F3C;&#x9876;&#x90E8;&#x5BFC;&#x822A;&#x6761;&#xFF0C;&#x7528;&#x6765;&#x8DF3;&#x8F6C;&#x9875;&#x9762;&#x548C;&#x4F20;&#x9012;&#x53C2;&#x6570;<br>&#xFF08;2&#xFF09;TabNavigator&#xFF1A;&#x7C7B;&#x4F3C;&#x5E95;&#x90E8;&#x5BFC;&#x822A;&#x680F;&#xFF0C;&#x7528;&#x6765;&#x5728;&#x540C;&#x4E00;&#x5C4F;&#x5E55;&#x4E0B;&#x5207;&#x6362;&#x4E0D;&#x540C;&#x754C;&#x9762;<br>&#xFF08;3&#xFF09;DrawerNavigator&#xFF1A;&#x4FA7;&#x6ED1;&#x83DC;&#x5355;&#x5BFC;&#x822A;&#x680F;&#xFF0C;&#x7528;&#x4E8E;&#x8F7B;&#x677E;&#x8BBE;&#x7F6E;&#x5E26;&#x62BD;&#x5C49;&#x5BFC;&#x822A;&#x7684;&#x5C4F;&#x5E55;</p>
+<h5 id="screenprops">screenProps</h5>
+<p><code>reactNavigation</code>&#x81EA;&#x5E26;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x5C5E;&#x4E8E;<code>navigationOptions</code>&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x5168;&#x5C40;&#x63A7;&#x5236;<code>navigationOptions</code>&#x4E2D;&#x7684;&#x67D0;&#x4E9B;&#x503C;&#xFF0C;&#x6BD4;&#x5982;&#x8BF4;&#x4F60;&#x60F3;&#x505A;&#x6362;&#x80A4;&#x529F;&#x80FD;&#xFF0C;&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x7EDD;&#x5BF9;&#x662F;&#x6700;&#x7B80;&#x5355;&#x7684;&#x65B9;&#x5F0F;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5047;&#x8BBE;App&#x5C31;&#x662F;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x8FD8;&#x4E0D;&#x77E5;&#x9053;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x4E0B;Demo&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x6211;&#x5C06;&#x4E3B;&#x9898;&#x8272;&#x901A;&#x8FC7;screenProps&#x5C5E;&#x6027;&#x4FEE;&#x6539;&#x6210;&apos;red&apos;</span>
+&lt;App screenProps={{themeColor:<span class="hljs-string">&apos;red&apos;</span>}}&gt;
+
+<span class="hljs-keyword">static</span> navigationOptions = ({navigation,screenProps}) =&gt; ({
+      <span class="hljs-comment">// &#x8FD9;&#x91CC;&#x9762;&#x7684;&#x5C5E;&#x6027;&#x548C;App.js&#x7684;navigationOptions&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</span>
+      headerStyle:{backgroundColor:screenProps?
+      screenProps.themeColor:
+      <span class="hljs-string">&apos;#4ECBFC&apos;</span>},
+    )
+})
+</code></pre>
+<h4 id="stacknavigator-&#x57FA;&#x7840;&#x7528;&#x6CD5;&#x5C5E;&#x6027;&#x4ECB;&#x7ECD;">StackNavigator &#x57FA;&#x7840;&#x7528;&#x6CD5;/&#x5C5E;&#x6027;&#x4ECB;&#x7ECD;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> MyApp = StackNavigator({
+    <span class="hljs-comment">// &#x5BF9;&#x5E94;&#x754C;&#x9762;&#x540D;&#x79F0;</span>
+    MyTab: {
+        screen: MyTab,
+    },
+    Detail: {
+        screen: Detail,
+        navigationOptions:{
+            headerTitle:<span class="hljs-string">&apos;&#x8BE6;&#x60C5;&apos;</span>,
+            headerBackTitle:<span class="hljs-literal">null</span>,
+        }
+    },
+}, {
+    headerMode: <span class="hljs-string">&apos;screen&apos;</span>,
+});
+</code></pre>
+<h5 id="&#x5BFC;&#x822A;&#x914D;&#x7F6E;">&#x5BFC;&#x822A;&#x914D;&#x7F6E;</h5>
+<ol>
+<li>screen&#xFF1A;&#x5BF9;&#x5E94;&#x754C;&#x9762;&#x540D;&#x79F0;&#xFF0C;&#x9700;&#x8981;&#x586B;&#x5165;import&#x4E4B;&#x540E;&#x7684;&#x9875;&#x9762;&#x3002;</li>
+<li>navigationOptions&#xFF1A;&#x914D;&#x7F6E;StackNavigator&#x7684;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#x3002;<ul>
+<li>title&#xFF1A;&#x6807;&#x9898;&#xFF0C;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x4E86;&#x8FD9;&#x4E2A;&#x5BFC;&#x822A;&#x680F;&#x548C;&#x6807;&#x7B7E;&#x680F;&#x7684;title&#x5C31;&#x4F1A;&#x53D8;&#x6210;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>header&#xFF1A;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E00;&#x4E9B;&#x5BFC;&#x822A;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x5F53;&#x7136;&#x5982;&#x679C;&#x60F3;&#x9690;&#x85CF;&#x9876;&#x90E8;&#x5BFC;&#x822A;&#x6761;&#x53EA;&#x8981;&#x5C06;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;&#x4E3A;null&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</li>
+<li>headerTitle&#xFF1A;&#x8BBE;&#x7F6E;&#x5BFC;&#x822A;&#x680F;&#x6807;&#x9898;&#xFF0C;&#x63A8;&#x8350;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</li>
+<li>headerBackTitle&#xFF1A;&#x8BBE;&#x7F6E;&#x8DF3;&#x8F6C;&#x9875;&#x9762;&#x5DE6;&#x4FA7;&#x8FD4;&#x56DE;&#x7BAD;&#x5934;&#x540E;&#x9762;&#x7684;&#x6587;&#x5B57;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x4E0A;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x6807;&#x9898;&#x3002;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E3A;null</li>
+<li>headerTruncatedBackTitle&#xFF1A;&#x8BBE;&#x7F6E;&#x5F53;&#x4E0A;&#x4E2A;&#x9875;&#x9762;&#x6807;&#x9898;&#x4E0D;&#x7B26;&#x5408;&#x8FD4;&#x56DE;&#x7BAD;&#x5934;&#x540E;&#x7684;&#x6587;&#x5B57;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x6539;&#x6210;&quot;&#x8FD4;&#x56DE;&quot;&#x3002;&#xFF08;&#x4E0A;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x6807;&#x9898;&#x8FC7;&#x957F;&#xFF0C;&#x5BFC;&#x81F4;&#x663E;&#x793A;&#x4E0D;&#x4E0B;&#xFF0C;&#x6240;&#x4EE5;&#x6539;&#x6210;&#x4E86;&#x77ED;&#x4E00;&#x4E9B;&#x7684;&#x3002;&#xFF09;</li>
+<li>headerRight&#xFF1A;&#x8BBE;&#x7F6E;&#x5BFC;&#x822A;&#x6761;&#x53F3;&#x4FA7;&#x3002;&#x53EF;&#x4EE5;&#x662F;&#x6309;&#x94AE;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x3002;</li>
+<li>headerLeft&#xFF1A;&#x8BBE;&#x7F6E;&#x5BFC;&#x822A;&#x6761;&#x5DE6;&#x4FA7;&#x3002;&#x53EF;&#x4EE5;&#x662F;&#x6309;&#x94AE;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x3002;</li>
+<li>headerStyle&#xFF1A;&#x8BBE;&#x7F6E;&#x5BFC;&#x822A;&#x6761;&#x7684;&#x6837;&#x5F0F;&#x3002;&#x80CC;&#x666F;&#x8272;&#xFF0C;&#x5BBD;&#x9AD8;&#x7B49;&#x3002;&#x5982;&#x679C;&#x60F3;&#x53BB;&#x6389;&#x5B89;&#x5353;&#x5BFC;&#x822A;&#x6761;&#x5E95;&#x90E8;&#x9634;&#x5F71;&#x53EF;&#x4EE5;&#x6DFB;&#x52A0;elevation: 0&#xFF0C;iOS&#x4E0B;&#x7528;shadowOpacity: 0&#x3002;</li>
+<li>headerTitleStyle&#xFF1A;&#x8BBE;&#x7F6E;&#x5BFC;&#x822A;&#x6761;&#x6587;&#x5B57;&#x6837;&#x5F0F;&#x3002;&#x5B89;&#x5353;&#x4E0A;&#x5982;&#x679C;&#x8981;&#x8BBE;&#x7F6E;&#x6587;&#x5B57;&#x5C45;&#x4E2D;&#xFF0C;&#x53EA;&#x8981;&#x6DFB;&#x52A0;alignSelf:&apos;center&apos;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;&#x5728;&#x5B89;&#x5353;&#x4E0A;&#x4F1A;&#x9047;&#x5230;&#xFF0C;&#x5982;&#x679C;&#x5DE6;&#x8FB9;&#x6709;&#x8FD4;&#x56DE;&#x7BAD;&#x5934;&#x5BFC;&#x81F4;&#x6587;&#x5B57;&#x8FD8;&#x662F;&#x6CA1;&#x6709;&#x5C45;&#x4E2D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6700;&#x7B80;&#x5355;&#x7684;&#x89E3;&#x51B3;&#x601D;&#x8DEF;&#x5C31;&#x662F;&#x5728;&#x53F3;&#x8FB9;&#x4E5F;&#x653E;&#x7F6E;&#x4E00;&#x4E2A;&#x7A7A;&#x7684;&#x6309;&#x94AE;&#x3002;</li>
+<li>headerBackTitleStyle&#xFF1A;&#x8BBE;&#x7F6E;&#x5BFC;&#x822A;&#x6761;&#x8FD4;&#x56DE;&#x6587;&#x5B57;&#x6837;&#x5F0F;&#x3002;</li>
+<li>headerTintColor&#xFF1A;&#x8BBE;&#x7F6E;&#x5BFC;&#x822A;&#x680F;&#x6587;&#x5B57;&#x989C;&#x8272;&#x3002;&#x603B;&#x611F;&#x89C9;&#x548C;&#x4E0A;&#x9762;&#x91CD;&#x53E0;&#x4E86;&#x3002;</li>
+<li>headerPressColorAndroid&#xFF1A;&#x5B89;&#x5353;&#x72EC;&#x6709;&#x7684;&#x8BBE;&#x7F6E;&#x989C;&#x8272;&#x7EB9;&#x7406;&#xFF0C;&#x9700;&#x8981;&#x5B89;&#x5353;&#x7248;&#x672C;&#x5927;&#x4E8E;5.0</li>
+<li>gesturesEnabled&#xFF1A;&#x662F;&#x5426;&#x652F;&#x6301;&#x6ED1;&#x52A8;&#x8FD4;&#x56DE;&#x624B;&#x52BF;&#xFF0C;iOS&#x9ED8;&#x8BA4;&#x652F;&#x6301;&#xFF0C;&#x5B89;&#x5353;&#x9ED8;&#x8BA4;&#x5173;&#x95ED;</li>
+<li>gestureResponseDistance&#xFF1A;&#x5BF9;&#x8C61;&#x8986;&#x76D6;&#x89E6;&#x6478;&#x4ECE;&#x5C4F;&#x5E55;&#x8FB9;&#x7F18;&#x5F00;&#x59CB;&#x7684;&#x8DDD;&#x79BB;&#xFF0C;&#x4EE5;&#x8BC6;&#x522B;&#x624B;&#x52BF;&#x3002; &#x5B83;&#x9700;&#x8981;&#x4EE5;&#x4E0B;&#x5C5E;&#x6027;&#xFF1A;<br>horizontal - number - &#x6C34;&#x5E73;&#x65B9;&#x5411;&#x7684;&#x8DDD;&#x79BB; &#x9ED8;&#x8BA4;&#x4E3A;25&#x3002;<br>vertical - number - &#x5782;&#x76F4;&#x65B9;&#x5411;&#x7684;&#x8DDD;&#x79BB; &#x9ED8;&#x8BA4;&#x4E3A;135&#x3002;<pre><code class="lang-js"><span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6ED1;&#x52A8;&#x8FD4;&#x56DE;&#x7684;&#x8DDD;&#x79BB;</span>
+gestureResponseDistance:{horizontal:<span class="hljs-number">300</span>},
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="&#x5BFC;&#x822A;&#x89C6;&#x89C9;&#x6548;&#x679C;">&#x5BFC;&#x822A;&#x89C6;&#x89C9;&#x6548;&#x679C;</h5>
+<ol>
+<li>mode&#xFF1A;&#x5B9A;&#x4E49;&#x8DF3;&#x8F6C;&#x98CE;&#x683C;&#x3002;<ul>
+<li>card&#xFF1A;&#x4F7F;&#x7528;iOS&#x548C;&#x5B89;&#x5353;&#x9ED8;&#x8BA4;&#x7684;&#x98CE;&#x683C;&#x3002;</li>
+<li>modal&#xFF1A;iOS&#x72EC;&#x6709;&#x7684;&#x4F7F;&#x5C4F;&#x5E55;&#x4ECE;&#x5E95;&#x90E8;&#x753B;&#x51FA;&#x3002;&#x7C7B;&#x4F3C;iOS&#x7684;present&#x6548;&#x679C;&#x3002;</li>
+</ul>
+</li>
+<li>headerMode&#xFF1A;&#x8FB9;&#x7F18;&#x6ED1;&#x52A8;&#x8FD4;&#x56DE;&#x4E0A;&#x7EA7;&#x9875;&#x9762;&#x65F6;&#x52A8;&#x753B;&#x6548;&#x679C;&#x3002;<ul>
+<li>float&#xFF1A;iOS&#x9ED8;&#x8BA4;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x660E;&#x663E;&#x7684;&#x8FC7;&#x6E21;&#x52A8;&#x753B;&#x3002;</li>
+<li>screen&#xFF1A;&#x6ED1;&#x52A8;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x90FD;&#x4F1A;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>none&#xFF1A;&#x6CA1;&#x6709;&#x52A8;&#x753B;&#x3002;</li>
+</ul>
+</li>
+<li>cardStyle&#xFF1A;&#x81EA;&#x5B9A;&#x4E49;&#x8BBE;&#x7F6E;&#x8DF3;&#x8F6C;&#x6548;&#x679C;&#x3002;</li>
+<li>transitionConfig&#xFF1A; &#x81EA;&#x5B9A;&#x4E49;&#x8BBE;&#x7F6E;&#x6ED1;&#x52A8;&#x8FD4;&#x56DE;&#x7684;&#x914D;&#x7F6E;&#x3002;</li>
+<li>onTransitionStart&#xFF1A;&#x5F53;&#x8F6C;&#x6362;&#x52A8;&#x753B;&#x5373;&#x5C06;&#x5F00;&#x59CB;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x529F;&#x80FD;&#x3002;</li>
+<li>onTransitionEnd&#xFF1A;&#x5F53;&#x8F6C;&#x6362;&#x52A8;&#x753B;&#x5B8C;&#x6210;&#xFF0C;&#x5C06;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x529F;&#x80FD;&#x3002;</li>
+<li>path&#xFF1A;&#x8DEF;&#x7531;&#x4E2D;&#x8BBE;&#x7F6E;&#x7684;&#x8DEF;&#x5F84;&#x7684;&#x8986;&#x76D6;&#x6620;&#x5C04;&#x914D;&#x7F6E;&#x3002;</li>
+<li>initialRouteName&#xFF1A;&#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x7684;&#x9875;&#x9762;&#x7EC4;&#x4EF6;&#xFF0C;&#x5FC5;&#x987B;&#x662F;&#x4E0A;&#x9762;&#x5DF2;&#x6CE8;&#x518C;&#x7684;&#x9875;&#x9762;&#x7EC4;&#x4EF6;&#x3002;</li>
+<li>initialRouteParams&#xFF1A;&#x521D;&#x59CB;&#x8DEF;&#x7531;&#x7684;&#x53C2;&#x6570;&#x3002;</li>
+</ol>
+<blockquote>
+<p> path:path&#x5C5E;&#x6027;&#x9002;&#x7528;&#x4E8E;&#x5176;&#x4ED6;app&#x6216;&#x6D4F;&#x89C8;&#x5668;&#x4F7F;&#x7528;url&#x6253;&#x5F00;&#x672C;app&#x5E76;&#x8FDB;&#x5165;&#x6307;&#x5B9A;&#x9875;&#x9762;&#x3002;path&#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x754C;&#x9762;&#x8DEF;&#x5F84;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x3010;/pages/Home&#x3011;&#x3002;&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x624B;&#x673A;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8F93;&#x5165;&#xFF1A;app&#x540D;&#x79F0;://pages/Home&#x6765;&#x542F;&#x52A8;&#x8BE5;App&#xFF0C;&#x5E76;&#x8FDB;&#x5165;Home&#x754C;&#x9762;&#x3002;</p>
+</blockquote>
+<h4 id="tabnavigator-&#x57FA;&#x7840;&#x7528;&#x6CD5;&#x5C5E;&#x6027;&#x4ECB;&#x7ECD;">TabNavigator &#x57FA;&#x7840;&#x7528;&#x6CD5;/&#x5C5E;&#x6027;&#x4ECB;&#x7ECD;</h4>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> MyTab = TabNavigator({
+    ShiTu: {
+        screen: ShiTu,
+        navigationOptions:{
+            tabBarLabel: <span class="hljs-string">&apos;&#x8BC6;&#x5154;&apos;</span>,
+            tabBarIcon: ({tintColor}) =&gt; (
+                <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">Image</span>
+                    <span class="hljs-attr">source</span>=<span class="hljs-string">{{uri</span> <span class="hljs-attr">:</span> &apos;&#x8BC6;&#x5154;&apos;}}
+                    <span class="hljs-attr">style</span>=<span class="hljs-string">{[tabBarIcon,</span> {<span class="hljs-attr">tintColor:</span> <span class="hljs-attr">tintColor</span>}]}
+                /&gt;</span>
+            ),
+        },
+    }, {
+    tabBarPosition: &apos;bottom&apos;,
+    swipeEnabled:false,
+    animationEnabled:false,
+    tabBarOptions: {
+        style: {
+            height:49
+        },
+        activeBackgroundColor:&apos;white&apos;,
+        activeTintColor:&apos;#4ECBFC&apos;,
+        inactiveBackgroundColor:&apos;white&apos;,
+        inactiveTintColor:&apos;#aaa&apos;,
+        showLabel:false,
+    }
+  }
+});
+</span></code></pre>
+<h5 id="&#x5C4F;&#x5E55;&#x5BFC;&#x822A;&#x914D;&#x7F6E;">&#x5C4F;&#x5E55;&#x5BFC;&#x822A;&#x914D;&#x7F6E;</h5>
+<ol>
+<li>screen&#xFF1A;&#x548C;&#x5BFC;&#x822A;&#x7684;&#x529F;&#x80FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x5BF9;&#x5E94;&#x754C;&#x9762;&#x540D;&#x79F0;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x5176;&#x4ED6;&#x9875;&#x9762;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;screen&#x4F20;&#x503C;&#x548C;&#x8DF3;&#x8F6C;&#x3002;</li>
+<li>navigationOptions&#xFF1A;&#x914D;&#x7F6E;TabNavigator&#x7684;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;<ul>
+<li>title&#xFF1A;&#x6807;&#x9898;&#xFF0C;&#x4F1A;&#x540C;&#x65F6;&#x8BBE;&#x7F6E;&#x5BFC;&#x822A;&#x6761;&#x548C;&#x6807;&#x7B7E;&#x680F;&#x7684;title&#xFF0C;&#x8FD8;&#x662F;&#x4E0D;&#x63A8;&#x8350;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</li>
+<li>tabBarVisible&#xFF1A;&#x662F;&#x5426;&#x9690;&#x85CF;&#x6807;&#x7B7E;&#x680F;&#x3002;&#x9ED8;&#x8BA4;&#x4E0D;&#x9690;&#x85CF;(true)</li>
+<li>tabBarIcon&#xFF1A;&#x8BBE;&#x7F6E;&#x6807;&#x7B7E;&#x680F;&#x7684;&#x56FE;&#x6807;&#x3002;&#x9700;&#x8981;&#x7ED9;&#x6BCF;&#x4E2A;&#x90FD;&#x8BBE;&#x7F6E;&#x3002;</li>
+<li>tabBarLabel&#xFF1A;&#x8BBE;&#x7F6E;&#x6807;&#x7B7E;&#x680F;&#x7684;title&#x3002;&#x63A8;&#x8350;&#x8FD9;&#x4E2A;&#x65B9;&#x5F0F;&#x3002;</li>
+<li>tabBarOnPress&#xFF1A;&#x8BBE;&#x7F6E;tabBar&#x7684;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#xFF0C;&#x5185;&#x90E8;&#x63D0;&#x4F9B;&#x4E86;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;(obj)&#x3002;<pre><code class="lang-js">tabBarOnPress:(obj)=&gt;{
+<span class="hljs-built_in">console</span>.log(obj);
+obj.jumpToIndex(obj.scene.index)
+},
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="&#x6807;&#x7B7E;&#x680F;&#x914D;&#x7F6E;">&#x6807;&#x7B7E;&#x680F;&#x914D;&#x7F6E;</h5>
+<ol>
+<li>tabBarPosition&#xFF1A;&#x8BBE;&#x7F6E;tabbar&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;iOS&#x9ED8;&#x8BA4;&#x5728;&#x5E95;&#x90E8;&#xFF0C;&#x5B89;&#x5353;&#x9ED8;&#x8BA4;&#x5728;&#x9876;&#x90E8;&#x3002;&#xFF08;&#x5C5E;&#x6027;&#x503C;&#xFF1A;&apos;top&apos;&#xFF0C;&apos;bottom&apos;&#xFF09;</li>
+<li>swipeEnabled&#xFF1A;&#x662F;&#x5426;&#x5141;&#x8BB8;&#x5728;&#x6807;&#x7B7E;&#x4E4B;&#x95F4;&#x8FDB;&#x884C;&#x6ED1;&#x52A8;&#x3002;</li>
+<li>animationEnabled&#xFF1A;&#x662F;&#x5426;&#x5728;&#x66F4;&#x6539;&#x6807;&#x7B7E;&#x65F6;&#x663E;&#x793A;&#x52A8;&#x753B;&#x3002;</li>
+<li>lazy&#xFF1A;&#x662F;&#x5426;&#x6839;&#x636E;&#x9700;&#x8981;&#x61D2;&#x60F0;&#x5448;&#x73B0;&#x6807;&#x7B7E;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x63D0;&#x524D;&#x5236;&#x4F5C;&#xFF0C;&#x610F;&#x601D;&#x662F;&#x5728;app&#x6253;&#x5F00;&#x7684;&#x65F6;&#x5019;&#x5C06;&#x5E95;&#x90E8;&#x6807;&#x7B7E;&#x680F;&#x5168;&#x90E8;&#x52A0;&#x8F7D;&#xFF0C;&#x9ED8;&#x8BA4;false,&#x63A8;&#x8350;&#x6539;&#x6210;true&#x54E6;&#x3002;</li>
+<li>initialRouteName&#xFF1A; &#x8BBE;&#x7F6E;&#x9ED8;&#x8BA4;&#x7684;&#x9875;&#x9762;&#x7EC4;&#x4EF6;</li>
+<li>backBehavior&#xFF1A;&#x6309; back &#x952E;&#x662F;&#x5426;&#x8DF3;&#x8F6C;&#x5230;&#x7B2C;&#x4E00;&#x4E2A;Tab(&#x9996;&#x9875;)&#xFF0C; none &#x4E3A;&#x4E0D;&#x8DF3;&#x8F6C;</li>
+<li>tabBarOptions&#xFF1A;&#x914D;&#x7F6E;&#x6807;&#x7B7E;&#x680F;&#x7684;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;</li>
+</ol>
+<h3 id="&#x56FE;&#x7247;">&#x56FE;&#x7247;</h3>
+<h4 id="&#x9759;&#x6001;&#x56FE;&#x7247;&#x8D44;&#x6E90;">&#x9759;&#x6001;&#x56FE;&#x7247;&#x8D44;&#x6E90;</h4>
+<p><code>React Native</code>&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x7EDF;&#x4E00;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x7BA1;&#x7406;<code>iOS</code>&#x548C;<code>Android</code>&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x56FE;&#x7247;&#x3002;&#x8981;&#x5F80;App&#x4E2D;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x56FE;&#x7247;&#xFF0C;&#x53EA;&#x9700;&#x628A;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x653E;&#x5728;&#x4EE3;&#x7801;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x67D0;&#x5904;&#xFF0C;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x5F15;&#x7528;&#x5B83;&#xFF1A;<code>&lt;Image source={require(&apos;./img/check.png&apos;)} /&gt;</code>&#xFF0C;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x7684;&#x67E5;&#x627E;&#x4F1A;&#x548C;JS&#x6A21;&#x5757;&#x7684;&#x67E5;&#x627E;&#x65B9;&#x5F0F;&#x4E00;&#x6837;&#x3002;&#x54EA;&#x4E2A;&#x7EC4;&#x4EF6;&#x5F15;&#x7528;&#x4E86;&#x8FD9;&#x4E2A;&#x56FE;&#x7247;&#xFF0C;Packager&#x5C31;&#x4F1A;&#x53BB;&#x8FD9;&#x4E2A;&#x7EC4;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x67E5;&#x627E;check.png&#x3002;&#x5E76;&#x4E14;&#xFF0C;&#x5982;&#x679C;&#x6709;check.ios.png&#x548C;check.android.png&#xFF0C;Packager&#x5C31;&#x4F1A;&#x6839;&#x636E;&#x5E73;&#x53F0;&#x800C;&#x9009;&#x62E9;&#x4E0D;&#x540C;&#x7684;&#x6587;&#x4EF6;&#x3002;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;@2x&#xFF0C;@3x&#x8FD9;&#x6837;&#x7684;&#x6587;&#x4EF6;&#x540D;&#x540E;&#x7F00;&#xFF0C;&#x6765;&#x4E3A;&#x4E0D;&#x540C;&#x7684;&#x5C4F;&#x5E55;&#x7CBE;&#x5EA6;&#x63D0;&#x4F9B;&#x56FE;&#x7247;&#x3002;&#x6BD4;&#x5982;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x7ED3;&#x6784;&#xFF1A;</p>
+<pre><code>.
+&#x251C;&#x2500;&#x2500; button.js
+&#x2514;&#x2500;&#x2500; img
+    &#x251C;&#x2500;&#x2500; check@2x.png
+    &#x2514;&#x2500;&#x2500; check@3x.png
+</code></pre><p>Packager&#x4F1A;&#x6253;&#x5305;&#x6240;&#x6709;&#x7684;&#x56FE;&#x7247;&#x5E76;&#x4E14;&#x4F9D;&#x636E;&#x5C4F;&#x5E55;&#x7CBE;&#x5EA6;&#x63D0;&#x4F9B;&#x5BF9;&#x5E94;&#x7684;&#x8D44;&#x6E90;&#x3002;&#x8B6C;&#x5982;&#x8BF4;&#xFF0C;iPhone 5s&#x4F1A;&#x4F7F;&#x7528;check@2x.png&#xFF0C;&#x800C;Nexus 5&#x4E0A;&#x5219;&#x4F1A;&#x4F7F;&#x7528;check@3x.png&#x3002;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x56FE;&#x7247;&#x6070;&#x597D;&#x6EE1;&#x8DB3;&#x5C4F;&#x5E55;&#x5206;&#x8FA8;&#x7387;&#xFF0C;&#x5219;&#x4F1A;&#x81EA;&#x52A8;&#x9009;&#x4E2D;&#x6700;&#x63A5;&#x8FD1;&#x7684;&#x4E00;&#x4E2A;&#x56FE;&#x7247;&#x3002;  </p>
+<p>&#x8FD9;&#x6837;&#x4F1A;&#x5E26;&#x6765;&#x5982;&#x4E0B;&#x7684;&#x4E00;&#x4E9B;&#x597D;&#x5904;:</p>
+<ol>
+<li>iOS&#x548C;Android&#x4E00;&#x81F4;&#x7684;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;</li>
+<li>&#x56FE;&#x7247;&#x548C;JS&#x4EE3;&#x7801;&#x5904;&#x5728;&#x76F8;&#x540C;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x8FD9;&#x6837;&#x7EC4;&#x4EF6;&#x5C31;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x81EA;&#x5DF1;&#x6240;&#x7528;&#x7684;&#x56FE;&#x7247;&#x800C;&#x4E0D;&#x7528;&#x5355;&#x72EC;&#x53BB;&#x8BBE;&#x7F6E;&#x3002;</li>
+<li>&#x4E0D;&#x9700;&#x8981;&#x5168;&#x5C40;&#x547D;&#x540D;&#x3002;&#x4F60;&#x4E0D;&#x7528;&#x518D;&#x62C5;&#x5FC3;&#x56FE;&#x7247;&#x540D;&#x5B57;&#x7684;&#x51B2;&#x7A81;&#x95EE;&#x9898;&#x4E86;&#x3002;</li>
+<li>&#x53EA;&#x6709;&#x5B9E;&#x9645;&#x88AB;&#x7528;&#x5230;&#xFF08;&#x5373;&#x88AB;require&#xFF09;&#x7684;&#x56FE;&#x7247;&#x624D;&#x4F1A;&#x88AB;&#x6253;&#x5305;&#x5230;&#x4F60;&#x7684;app&#x3002;</li>
+<li>&#x73B0;&#x5728;&#x5728;&#x5F00;&#x53D1;&#x671F;&#x95F4;&#xFF0C;&#x589E;&#x52A0;&#x548C;&#x4FEE;&#x6539;&#x56FE;&#x7247;&#x4E0D;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x7F16;&#x8BD1;&#x4E86;&#xFF0C;&#x53EA;&#x8981;&#x548C;&#x4FEE;&#x6539;js&#x4EE3;&#x7801;&#x4E00;&#x6837;&#x5237;&#x65B0;&#x4F60;&#x7684;&#x6A21;&#x62DF;&#x5668;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</li>
+<li>&#x4E0E;&#x8BBF;&#x95EE;&#x7F51;&#x7EDC;&#x56FE;&#x7247;&#x76F8;&#x6BD4;&#xFF0C;Packager&#x53EF;&#x4EE5;&#x5F97;&#x77E5;&#x56FE;&#x7247;&#x5927;&#x5C0F;&#x4E86;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x4EE3;&#x7801;&#x91CC;&#x518D;&#x58F0;&#x660E;&#x4E00;&#x904D;&#x5C3A;&#x5BF8;&#x3002;</li>
+<li>&#x73B0;&#x5728;&#x901A;&#x8FC7;npm&#x6765;&#x5206;&#x53D1;&#x7EC4;&#x4EF6;&#x6216;&#x5E93;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x56FE;&#x7247;&#x4E86;&#x3002;<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x4E3A;&#x4E86;&#x4F7F;&#x65B0;&#x7684;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x673A;&#x5236;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF0C;require&#x4E2D;&#x7684;&#x56FE;&#x7247;&#x540D;&#x5B57;&#x5FC5;&#x987B;&#x662F;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x5B57;&#x7B26;&#x4E32;&#xFF08;&#x4E0D;&#x80FD;&#x4F7F;&#x7528;&#x53D8;&#x91CF;&#xFF01;&#x56E0;&#x4E3A;require&#x662F;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x671F;&#x6267;&#x884C;&#xFF0C;&#x800C;&#x975E;&#x8FD0;&#x884C;&#x65F6;&#x671F;&#x6267;&#x884C;&#xFF01;&#xFF09;&#x3002;</p>
+</blockquote>
+</li>
+</ol>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x6B63;&#x786E;</span>
+&lt;Image source={<span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./my-icon.png&apos;</span>)} /&gt;
+<span class="hljs-comment">// &#x9519;&#x8BEF;</span>
+<span class="hljs-keyword">var</span> icon = <span class="hljs-keyword">this</span>.props.active ? <span class="hljs-string">&apos;my-icon-active&apos;</span> : <span class="hljs-string">&apos;my-icon-inactive&apos;</span>;
+&lt;Image source={require(&apos;./&apos; + icon + &apos;.png&apos;)} /&gt;
+// &#x6B63;&#x786E;
+var icon = this.props.active ? require(&apos;./my-icon-active.png&apos;) : require(&apos;./my-icon-inactive.png&apos;);
+&lt;Image source={icon} /&gt;
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x901A;&#x8FC7;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5F15;&#x7528;&#x7684;&#x56FE;&#x7247;&#x8D44;&#x6E90;&#x5305;&#x542B;&#x56FE;&#x7247;&#x7684;&#x5C3A;&#x5BF8;&#xFF08;&#x5BBD;&#x5EA6;&#xFF0C;&#x9AD8;&#x5EA6;&#xFF09;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x52A8;&#x6001;&#x7F29;&#x653E;&#x56FE;&#x7247;&#xFF08;&#x4F8B;&#x5982;&#xFF0C;&#x901A;&#x8FC7;flex&#xFF09;&#xFF0C;&#x53EF;&#x80FD;&#x5FC5;&#x987B;&#x624B;&#x52A8;&#x5728;style&#x5C5E;&#x6027;&#x8BBE;&#x7F6E;{ width: undefined, height: undefined }&#x3002;</p>
+</blockquote>
+<h4 id="&#x7F51;&#x7EDC;&#x56FE;&#x7247;">&#x7F51;&#x7EDC;&#x56FE;&#x7247;</h4>
+<p>&#x5F88;&#x591A;&#x8981;&#x5728;App&#x4E2D;&#x663E;&#x793A;&#x7684;&#x56FE;&#x7247;&#x5E76;&#x4E0D;&#x80FD;&#x5728;&#x7F16;&#x8BD1;&#x7684;&#x65F6;&#x5019;&#x83B7;&#x5F97;&#xFF0C;&#x53C8;&#x6216;&#x8005;&#x6709;&#x65F6;&#x5019;&#x9700;&#x8981;&#x52A8;&#x6001;&#x8F7D;&#x5165;&#x6765;&#x51CF;&#x5C11;&#x6253;&#x5305;&#x540E;&#x7684;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x7684;&#x5927;&#x5C0F;&#x3002;&#x8FD9;&#x4E9B;&#x65F6;&#x5019;&#xFF0C;&#x4E0E;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x9700;&#x8981;&#x624B;&#x52A8;&#x6307;&#x5B9A;&#x56FE;&#x7247;&#x7684;&#x5C3A;&#x5BF8;&#x3002;&#x540C;&#x65F6;&#x5F3A;&#x70C8;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;https&#x4EE5;&#x6EE1;&#x8DB3;iOS App Transport Security &#x7684;&#x8981;&#x6C42;&#x3002;</p>
+<pre><code class="lang-js">&lt;Image source={{uri: <span class="hljs-string">&apos;https://facebook.github.io/react/img/logo_og.png&apos;</span>}}
+       style={{width: <span class="hljs-number">400</span>, height: <span class="hljs-number">400</span>}} /&gt;
+</code></pre>
+<h4 id="&#x7F51;&#x7EDC;&#x56FE;&#x7247;&#x7684;&#x8BF7;&#x6C42;&#x53C2;&#x6570;">&#x7F51;&#x7EDC;&#x56FE;&#x7247;&#x7684;&#x8BF7;&#x6C42;&#x53C2;&#x6570;</h4>
+<p>&#x8FD8;&#x53EF;&#x4EE5;&#x5728;Image&#x7EC4;&#x4EF6;&#x7684;source&#x5C5E;&#x6027;&#x4E2D;&#x6307;&#x5B9A;&#x4E00;&#x4E9B;&#x8BF7;&#x6C42;&#x53C2;&#x6570;</p>
+<pre><code class="lang-js">&lt;Image source={{
+  uri: <span class="hljs-string">&apos;https://facebook.github.io/react/img/logo_og.png&apos;</span>,
+  method: <span class="hljs-string">&apos;POST&apos;</span>,
+  headers: {
+    Pragma: <span class="hljs-string">&apos;no-cache&apos;</span>
+  },
+  body: <span class="hljs-string">&apos;Your Body goes here&apos;</span>
+}}
+style={{width: <span class="hljs-number">400</span>, height: <span class="hljs-number">400</span>}} /&gt;
+</code></pre>
+<h4 id="&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7EC4;&#x4EF6;">&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7EC4;&#x4EF6;</h4>
+<p>&#x6211;&#x4EEC;&#x5E38;&#x9762;&#x5BF9;&#x7684;&#x4E00;&#x79CD;&#x9700;&#x6C42;&#x5C31;&#x662F;&#x7C7B;&#x4F3C;web&#x4E2D;&#x7684;&#x80CC;&#x666F;&#x56FE;&#xFF08;background-image&#xFF09;&#x3002;&#x8981;&#x5B9E;&#x73B0;&#x8FD9;&#x4E00;&#x7528;&#x4F8B;&#xFF0C;&#x53EA;&#x9700;&#x7B80;&#x5355;&#x4F7F;&#x7528;<imagebackground>&#x7EC4;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x628A;&#x9700;&#x8981;&#x80CC;&#x666F;&#x56FE;&#x7684;&#x5B50;&#x7EC4;&#x4EF6;&#x5D4C;&#x5165;&#x5176;&#x4E2D;&#x5373;&#x53EF;&#x3002;</imagebackground></p>
+<pre><code class="lang-js">&lt;ImageBackground source={...}&gt;
+    &lt;Text&gt;&#x80CC;&#x666F;&#x56FE;&#x7684;&#x5B50;&#x7EC4;&#x4EF6;&lt;/Text&gt;
+&lt;/ImageBackground&gt;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1-reactNative.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 初学ReactNative">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ReactNative进阶一","level":"1.7.2","depth":2,"previous":{"title":"初学ReactNative","level":"1.7.1","depth":2,"path":"react-native/1-reactNative.md","ref":"./react-native/1-reactNative.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react-native/2-reactNative.md","mtime":"2018-02-24T07:43:02.570Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-02-24T07:52:10.856Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
