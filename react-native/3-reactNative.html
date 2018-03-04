@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>reducer 拆分 · GitBook</title>
+        <title>ReactNative进阶二 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="thunk.html" />
     
-    
-    <link rel="prev" href="connect.html" />
+    <link rel="prev" href="2-reactNative.html" />
     
 
     </head>
@@ -252,9 +250,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="store.html">
+        <li class="chapter " data-level="1.3.1" data-path="../redux/store.html">
             
-                <a href="store.html">
+                <a href="../redux/store.html">
             
                     
                     Redux Store
@@ -265,9 +263,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="connect.html">
+        <li class="chapter " data-level="1.3.2" data-path="../redux/connect.html">
             
-                <a href="connect.html">
+                <a href="../redux/connect.html">
             
                     
                     connect 订阅 store 数据
@@ -278,9 +276,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.3" data-path="combine-reducers.html">
+        <li class="chapter " data-level="1.3.3" data-path="../redux/combine-reducers.html">
             
-                <a href="combine-reducers.html">
+                <a href="../redux/combine-reducers.html">
             
                     
                     reducer 拆分
@@ -291,9 +289,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="thunk.html">
+        <li class="chapter " data-level="1.3.4" data-path="../redux/thunk.html">
             
-                <a href="thunk.html">
+                <a href="../redux/thunk.html">
             
                     
                     redux-thunk
@@ -458,9 +456,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="../react-native/1-reactNative.html">
+        <li class="chapter " data-level="1.7.1" data-path="1-reactNative.html">
             
-                <a href="../react-native/1-reactNative.html">
+                <a href="1-reactNative.html">
             
                     
                     初学ReactNative
@@ -471,9 +469,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="../react-native/2-reactNative.html">
+        <li class="chapter " data-level="1.7.2" data-path="2-reactNative.html">
             
-                <a href="../react-native/2-reactNative.html">
+                <a href="2-reactNative.html">
             
                     
                     ReactNative进阶一
@@ -484,9 +482,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.3" data-path="../react-native/3-reactNative.html">
+        <li class="chapter active" data-level="1.7.3" data-path="3-reactNative.html">
             
-                <a href="../react-native/3-reactNative.html">
+                <a href="3-reactNative.html">
             
                     
                     ReactNative进阶二
@@ -532,7 +530,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >reducer 拆分</a>
+        <a href=".." >ReactNative进阶二</a>
     </h1>
 </div>
 
@@ -547,84 +545,75 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x53EA;&#x7528;&#x4E00;&#x4E2A; reducer &#xFF0C;&#x968F;&#x7740;&#x72B6;&#x6001;&#x6811;&#x53D8;&#x5927;&#xFF0C;reducer &#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x5F88;&#x590D;&#x6742;&#x3002;&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x8FDB;&#x884C; reducer &#x7684;&#x62C6;&#x5206;&#x5462;&#xFF1F;&#x8FD9;&#x5C31;&#x6D89;&#x53CA;&#x5230; rootReducer/combineReducers &#x8FD9;&#x4E9B;&#x6280;&#x5DE7;&#x4E86;&#x3002;</p>
-<p>&#x62C6;&#x5206;&#x540E;&#xFF0C;&#x8981;&#x8FBE;&#x6210;&#x4E24;&#x4E2A;&#x76EE;&#x6807;&#xFF1A;</p>
+                                <h2 id="&#x89E6;&#x6478;&#x4E8B;&#x4EF6;">&#x89E6;&#x6478;&#x4E8B;&#x4EF6;</h2>
+<h3 id="&#x70B9;&#x51FB;&#x3001;&#x957F;&#x6309;&#x4E8B;&#x4EF6;">&#x70B9;&#x51FB;&#x3001;&#x957F;&#x6309;&#x4E8B;&#x4EF6;</h3>
+<p>&#x5728;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>Touchable</code>&#x5F00;&#x5934;&#x7684;&#x4E00;&#x7CFB;&#x5217;&#x7EC4;&#x4EF6;&#x3002;&#x8FD9;&#x4E9B;&#x7EC4;&#x4EF6;&#x901A;&#x8FC7;<code>onPress</code>&#x5C5E;&#x6027;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;&#x7684;&#x5904;&#x7406;&#x51FD;&#x6570;&#x3002;&#x5728;&#x6309;&#x4E0B;&#x624B;&#x6307;&#x5E76;&#x4E14;&#x62AC;&#x8D77;&#x624B;&#x6307;&#x6CA1;&#x6709;&#x79FB;&#x9664;&#x7EC4;&#x4EF6;&#x5916;&#xFF0C;&#x6B64;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;&#x8FD9;&#x4E9B;&#x7EC4;&#x4EF6;&#x4E0B;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x9700;&#x8981;&#x5305;&#x88F9;&#x5728;&#x4E00;&#x4E2A;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x3002;  </p>
 <ul>
-<li>&#x6BCF;&#x4E2A; reducer &#x8D1F;&#x8D23;&#x4E00;&#x7C7B;&#x6570;&#x636E;&#xFF0C;&#x6240;&#x4EE5;&#x6BCF;&#x4E2A; reducer &#x90FD;&#x4E0D;&#x4F1A;&#x5F88;&#x5927;</li>
-<li>&#x6BCF;&#x4E2A; reducer &#x4FEE;&#x6539;&#x7684; state &#x503C;&#xFF0C;&#x90FD;<strong>&#x4E0D;&#x662F;</strong>&#x6574;&#x4E2A;&#x72B6;&#x6001;&#x6811;</li>
+<li>TouchableWithoutFeedback&#xFF1A;&#x70B9;&#x51FB;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x89C6;&#x89C9;&#x53CD;&#x9988;&#x3002;</li>
+<li>TouchableHighlight&#xFF1A;&#x70B9;&#x51FB;&#x80CC;&#x666F;&#x4F1A;&#x53D8;&#x6697;&#x3002;</li>
+<li>TouchableOpacity&#xFF1A;&#x70B9;&#x51FB;&#x964D;&#x4F4E;&#x6309;&#x94AE;&#x7684;&#x900F;&#x660E;&#x5EA6;&#xFF0C;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x80CC;&#x666F;&#x7684;&#x989C;&#x8272;&#x3002;</li>
+<li>TouchableNativeFeedback&#xFF1A;&#x53EA;&#x80FD;&#x5728;android&#x4E2D;&#x4F7F;&#x7528;&#xFF0C;&#x4F1A;&#x5728;&#x70B9;&#x51FB;&#x65F6;&#x5F62;&#x6210;&#x7C7B;&#x4F3C;&#x58A8;&#x6C34;&#x6D9F;&#x6F2A;&#x7684;&#x89C6;&#x89C9;&#x6548;&#x679C;&#x3002;<pre><code class="lang-js"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyButton</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+render() {
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">TouchableHighlight</span>
+      <span class="hljs-attr">onPressIn</span>=<span class="hljs-string">{()</span> =&gt;</span> console.log(&quot;&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x89E6;&#x53D1;&quot;)}
+      onPressOut={() =&gt; console.log(&quot;&#x70B9;&#x51FB;&#x7ED3;&#x675F;&#x6216;&#x79BB;&#x5F00;&#x89E6;&#x53D1;&quot;)}
+      onPress={() =&gt; console.log(&quot;&#x5355;&#x51FB;&#x89E6;&#x53D1;&quot;)}
+      onLongPress={() =&gt; console.log(&quot;&#x957F;&#x6309;&#x89E6;&#x53D1;&quot;)}
+    &gt;
+      <span class="hljs-tag">&lt;<span class="hljs-name">Text</span>&gt;</span>button<span class="hljs-tag">&lt;/<span class="hljs-name">Text</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">TouchableHighlight</span>&gt;</span></span>
+  );
+}
+}
+</code></pre>
+</li>
 </ul>
-<h3 id="&#x521B;&#x5EFA;-reducersindexjs-&#x6587;&#x4EF6;">&#x521B;&#x5EFA; reducers/index.js &#x6587;&#x4EF6;</h3>
-<pre><code>let defaultState = {
-  comments: [&apos;xxx1&apos;, &apos;hello2&apos;],
-  likes: 0
-}
-
-function rootReducer(state = defaultState, action) {
-  switch (action.type) {
-    case &apos;ADD_COMMENT&apos;:
-      return {...state, comments: [...state.comments, action.comment]};
-    case &apos;INCREMENT_LIKE&apos;:
-      return {...state, likes: state.likes + 1 }
-    default:
-      return state
-  }
-}
-
-export default rootReducer
-</code></pre><p>&#x521B;&#x5EFA;redux/store.js</p>
-<pre><code>import { createStore } from &apos;redux&apos;
-import rootReducer from &apos;./reducers&apos;
-
-let store = createStore(rootReducer)
-export default store
-</code></pre><h3 id="&#x62C6;&#x51FA;&#x4E24;&#x4E2A;-reducer">&#x62C6;&#x51FA;&#x4E24;&#x4E2A; reducer</h3>
-<p>&#x6BCF;&#x4E2A; reducer &#x7684; state &#x9ED8;&#x8BA4;&#x503C;&#x90FD;&#x53EA;&#x662F;&#x81EA;&#x5DF1;&#x5BF9;&#x5E94;&#x7684;&#x90A3;&#x4E00;&#x90E8;&#x5206;&#x6570;&#x636E;&#x3002;</p>
-<pre><code>import { combineReducers } from &apos;redux&apos;
-
-let comments = [&apos;xxx1&apos;, &apos;hello2&apos;]
-
-function commentReducer(state= comments, action) {
-  switch (action.type) {
-    case &apos;ADD_COMMENT&apos;:
-      return [...state, action.comment]
-    default:
-      return state
-  }
-}
-
-let likes = 0
-
-function likeReducer(state = likes, action) {
-  switch (action.type) {
-    case &apos;INCREMENT_LIKE&apos;:
-      return state + 1
-    default:
-      return state
-  }
-}
-
-const rootReducer = combineReducers({
-  comments: commentReducer,
-  likes: likeReducer
+<h2 id="&#x5B9A;&#x65F6;&#x5668;">&#x5B9A;&#x65F6;&#x5668;</h2>
+<ul>
+<li><code>setTimeout(fn, n)</code>, <code>clearTimeout</code>&#xFF1A;n&#x6BEB;&#x79D2;&#x540E;&#x6267;&#x884C;fn&#x51FD;&#x6570;&#xFF0C;&#x53EA;&#x6267;&#x884C;&#x4E00;&#x6B21;</li>
+<li><code>setInterval(fn, n)</code>, <code>clearInterval</code>&#xFF1A;&#x6BCF;&#x9694;n&#x6BEB;&#x79D2;&#x6267;&#x884C;&#x4E00;&#x6B21;</li>
+<li><code>setImmediate</code>, <code>clearImmediate</code>&#xFF1A;&#x53EA;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x7ACB;&#x5373;&#x6267;&#x884C;</li>
+<li><code>requestAnimationFrame</code>, <code>cancelAnimationFrame</code>&#xFF1A;&#x6BCF;&#x5E27;&#x5237;&#x65B0;&#x4E4B;&#x540E;&#x6267;&#x884C;&#x4E00;&#x6B21;&#xFF0C;&#x7528;&#x6765;&#x6267;&#x884C;&#x5728;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x5185;&#x63A7;&#x5236;&#x89C6;&#x56FE;&#x52A8;&#x753B;&#x7684;&#x4EE3;&#x7801;  </li>
+</ul>
+<p>&#x539F;&#x751F;&#x5E94;&#x7528;&#x611F;&#x89C9;&#x5982;&#x6B64;&#x6D41;&#x7545;&#x7684;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x539F;&#x56E0;&#x5C31;&#x662F;&#x5728;&#x4E92;&#x52A8;&#x548C;&#x52A8;&#x753B;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x907F;&#x514D;&#x7E41;&#x91CD;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x5728;React Native&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x76EE;&#x524D;&#x53D7;&#x5230;&#x9650;&#x5236;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x53EA;&#x6709;&#x4E00;&#x4E2A;JavaScript&#x6267;&#x884C;&#x7EBF;&#x7A0B;&#x3002;&#x4E0D;&#x8FC7;&#x53EF;&#x4EE5;&#x7528;InteractionManager&#x6765;&#x786E;&#x4FDD;&#x5728;&#x6267;&#x884C;&#x7E41;&#x91CD;&#x5DE5;&#x4F5C;&#x4E4B;&#x524D;&#x6240;&#x6709;&#x7684;&#x4EA4;&#x4E92;&#x548C;&#x52A8;&#x753B;&#x90FD;&#x5DF2;&#x7ECF;&#x5904;&#x7406;&#x5B8C;&#x6BD5;&#x3002;&#x5E94;&#x7528;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x6765;&#x5B89;&#x6392;&#x4E00;&#x4E2A;&#x4EFB;&#x52A1;&#xFF0C;&#x4F7F;&#x5176;&#x5728;&#x4EA4;&#x4E92;&#x7ED3;&#x675F;&#x4E4B;&#x540E;&#x6267;&#x884C;&#x3002;</p>
+<p><code>InteractionManager</code>&#x7684;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;&#x65B9;&#x6CD5;,&#x5E38;&#x7528;runAfterInteractions&#x65B9;&#x6CD5;:</p>
+<ul>
+<li>runAfterInteractions(task)  &#x9759;&#x6001;&#x65B9;&#x6CD5;,&#x5728;&#x7528;&#x6237;&#x4EA4;&#x4E92;&#x548C;&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x4EE5;&#x540E;&#x6267;&#x884C;&#x4EFB;&#x52A1;</li>
+<li>createInteractionHandle() &#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x53E5;&#x67C4;(&#x5904;&#x7406;&#x5668;)&#xFF0C;&#x901A;&#x77E5;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x67D0;&#x4E2A;&#x52A8;&#x753B;&#x6216;&#x8005;&#x4EA4;&#x4E92;&#x5F00;&#x59CB;&#x4E86;</li>
+<li>clearInteractionHandle(handler:Handle)  &#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF0C;&#x8FDB;&#x884C;&#x6E05;&#x9664;&#x53E5;&#x67C4;&#xFF0C;&#x901A;&#x77E5;&#x7BA1;&#x7406;&#x5668;&#xFF0C;&#x67D0;&#x4E2A;&#x52A8;&#x753B;&#x6216;&#x8005;&#x4EA4;&#x4E92;&#x7ED3;&#x675F;&#x4E86;&#x3002;</li>
+<li>setDeadline(deadline:number) &#x9759;&#x6001;&#x65B9;&#x6CD5;, &#x8BBE;&#x7F6E;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;&#xFF0C;&#x8BE5;&#x4F1A;&#x8C03;&#x7528;setTimeout&#x65B9;&#x6CD5;&#x6302;&#x8D77;&#x5E76;&#x4E14;&#x963B;&#x585E;&#x6240;&#x6709;&#x6CA1;&#x6709;&#x5B8C;&#x6210;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x7136;&#x540E;&#x5728;eventLoopRunningTime&#x5230;&#x8BBE;&#x5B9A;&#x7684;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;&#x540E;&#xFF0C;&#x7136;&#x540E;&#x6267;&#x884C;setImmediate&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x6279;&#x91CF;&#x6267;&#x884C;&#x4EFB;&#x52A1;</li>
+</ul>
+<pre><code class="lang-js">InteractionManager.runAfterInteractions(() =&gt; {
+   <span class="hljs-comment">// ...&#x9700;&#x8981;&#x957F;&#x65F6;&#x95F4;&#x540C;&#x6B65;&#x6267;&#x884C;&#x7684;&#x4EFB;&#x52A1;...</span>
 })
 
 
-export default rootReducer
-</code></pre><p>&#x6CE8;&#x610F;&#xFF1A; combine &#x7684;&#x610F;&#x601D;&#x662F;&#x201C;&#x5408;&#x5E76;&#x201D;</p>
-<pre><code>const rootReducer = combineReducers({
-  comments: commentReducer,
-  likes: likeReducer
-})
-</code></pre><p>&#x4E0A;&#x9762;&#x7684;&#x53C2;&#x6570;&#x4E2D;&#xFF0C;<code>comments</code> &#x662F;&#x9700;&#x8981;&#x88AB;&#x66F4;&#x65B0;&#x7684; state &#xFF0C;commentReducer &#x662F;&#x8D1F;&#x8D23;&#x66F4;&#x65B0;&#x5B83;&#x7684; reducer &#xFF0C;&#x540C;&#x7406; likes &#x548C; likeReducer &#x4E5F;&#x662F;&#x8FD9;&#x6837;&#x7684;&#x5173;&#x7CFB;&#x3002;&#x6700;&#x7EC8;&#x7684;&#x6574;&#x4E2A; App &#x7684;&#x72B6;&#x6001;&#x6811;&#xFF0C;&#x5C31;&#x662F;</p>
-<pre><code>{
-  comments,
-  likes
-}
-</code></pre><p>&#x540E;&#x7EED;&#x5728;&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x7684; mapStateToProps(state) &#x51FD;&#x6570;&#x4E2D;&#x7684; state &#x5C31;&#x662F;&#x4E0A;&#x9762;&#x7684;&#x8FD9;&#x4E2A;&#x503C;&#x3002;</p>
-<h3 id="&#x53C2;&#x8003;&#x8D44;&#x6599;">&#x53C2;&#x8003;&#x8D44;&#x6599;</h3>
-<ul>
-<li><a href="http://cn.redux.js.org/docs/recipes/reducers/UsingCombineReducers.html" target="_blank">&#x5B98;&#x65B9;&#x7684; combineReducers()&#x6587;&#x6863;</a></li>
-</ul>
+<span class="hljs-keyword">var</span> handle = InteractionManager.createInteractionHandle();
+<span class="hljs-comment">// &#x6267;&#x884C;&#x52A8;&#x753B;... (`runAfterInteractions`&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x6392;&#x961F;&#x7B49;&#x5019;)</span>
+<span class="hljs-comment">// &#x5728;&#x52A8;&#x753B;&#x5B8C;&#x6210;&#x4E4B;&#x540E;</span>
+InteractionManager.clearInteractionHandle(handle);
+<span class="hljs-comment">// &#x5728;&#x6240;&#x6709;&#x53E5;&#x67C4;&#x90FD;&#x6E05;&#x9664;&#x4E4B;&#x540E;&#xFF0C;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#x4F9D;&#x5E8F;&#x6267;&#x884C;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x4EFB;&#x52A1;</span>
+</code></pre>
+<p>&#x5F53;&#x7EC4;&#x4EF6;&#x88AB;&#x5378;&#x8F7D;&#xFF0C;&#x4E00;&#x5B9A;&#x8981;&#x6E05;&#x9664;&#x5B9A;&#x65F6;&#x5668;!</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> React,{
+  Component
+} <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;react&apos;</span>;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Hello</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  componentDidMount() {
+    <span class="hljs-keyword">this</span>.timer = setInterval(
+      () =&gt; { <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x628A;&#x4E00;&#x4E2A;&#x5B9A;&#x65F6;&#x5668;&#x7684;&#x5F15;&#x7528;&#x6302;&#x5728;this&#x4E0A;&apos;</span>); },
+      <span class="hljs-number">500</span>
+    );
+  }
+  componentWillUnmount() {
+    <span class="hljs-comment">// &#x5982;&#x679C;&#x5B58;&#x5728;this.timer&#xFF0C;&#x5219;&#x4F7F;&#x7528;clearTimeout&#x6E05;&#x7A7A;&#x3002;</span>
+    <span class="hljs-comment">// &#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;&#x591A;&#x4E2A;timer&#xFF0C;&#x90A3;&#x4E48;&#x7528;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;&#x6216;&#x8005;&#x7528;&#x4E2A;&#x6570;&#x7EC4;&#x6765;&#x4FDD;&#x5B58;&#x5F15;&#x7528;&#xFF0C;&#x7136;&#x540E;&#x9010;&#x4E2A;clear</span>
+    <span class="hljs-keyword">this</span>.timer &amp;&amp; clearTimeout(<span class="hljs-keyword">this</span>.timer);
+  }
+};
+</code></pre>
 
                                 
                                 </section>
@@ -652,14 +641,10 @@ export default rootReducer
 
             
                 
-                <a href="connect.html" class="navigation navigation-prev " aria-label="Previous page: connect 订阅 store 数据">
+                <a href="2-reactNative.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: ReactNative进阶一">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="thunk.html" class="navigation navigation-next " aria-label="Next page: redux-thunk">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -668,7 +653,7 @@ export default rootReducer
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"reducer 拆分","level":"1.3.3","depth":2,"next":{"title":"redux-thunk","level":"1.3.4","depth":2,"path":"redux/thunk.md","ref":"./redux/thunk.md","articles":[]},"previous":{"title":"connect 订阅 store 数据","level":"1.3.2","depth":2,"path":"redux/connect.md","ref":"./redux/connect.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"redux/combine-reducers.md","mtime":"2018-02-24T07:22:15.436Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-04T08:43:20.679Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ReactNative进阶二","level":"1.7.3","depth":2,"previous":{"title":"ReactNative进阶一","level":"1.7.2","depth":2,"path":"react-native/2-reactNative.md","ref":"./react-native/2-reactNative.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react-native/3-reactNative.md","mtime":"2018-03-04T08:05:32.137Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-04T08:43:20.679Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
