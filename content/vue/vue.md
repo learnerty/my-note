@@ -250,6 +250,12 @@ vue可以有很多实例，但一般不会声明多个,vue中尽量少使用箭�
       updated(){  //由于数据更改导致的虚拟 DOM 重新渲染和打补丁，在这之后会调用该钩子。
         console.log('updated');
       },
+      activated(){  //组件激活时调用。
+        console.log('activated');
+      },
+      deactivated(){  //组件停用时调用。
+        console.log('deactivated');
+      },
       beforeDestroy(){  //实例销毁之前调用。在这一步，实例仍然完全可用。
         console.log('beforeDestroy');
       },
@@ -298,6 +304,58 @@ vue可以有很多实例，但一般不会声明多个,vue中尽量少使用箭�
 </body>
 ```
 
+### 用 Prop 传递数据
+```js
+子组件要显式地用 props 选项声明它预期的数据：
+Vue.component('child', {
+  // 声明 props
+  props: ['message'],
+  // 就像 data 一样，prop 也可以在模板中使用
+  // 同样也可以在 vm 实例中通过 this.message 来使用
+  template: '<span>{{ message }}</span>'
+})
+然后我们可以这样向它传入一个普通字符串：
+<child message="hello!"></child>
+子组件将显示hello
+
+动态传入props可以使用v-bind来绑定数据
+<child v-bind:my-message="parentMsg"></child>
+```
+
+### 子组件调用父组件方法
+```js
+使用 $on(eventName) 监听事件
+使用 $emit(eventName) 触发事件
+
+子组件：
+<template>  
+  <div @click="goToFatherDetail(233)"></div>  
+</template>  
+<script>
+  export default {  
+    methods: {  
+      goToFatherDetail (itemId) {
+        this.$emit('refreshbizlines', itemId)
+      }  
+    }  
+  };  
+</script>
+父组件：
+<template>
+  <child  v-on:refreshbizlines="goToDetail"></child>
+</template>  
+
+<script type="text/ecmascript-6">  
+  export default {  
+    methods: {  
+      goToDetail (itemId) {  
+        console.log('父组件走你：' +  itemId);  
+      }
+    }
+  };  
+</script>
+```
+
 ## 命令行
 ```
 # 全局安装 vue-cli
@@ -312,3 +370,5 @@ $ npm run dev
 
 ### atom 的vue语法高亮
 language-vue
+### vue移动端常用ui库
+[vux](https://vux.li/#/zh-CN/README)

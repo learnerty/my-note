@@ -26,14 +26,14 @@ context.stroke() 描边
 context.lineWidth 设置线条宽度（取值为数值）
 context.strokeStyle 设置线条样式（一般取值为颜色值）
 context.lineCap 设置线条的两头的样式（取值有butt(default)[默认]、round[圆]、square[方]）
-context.lineJoin 设置线条的两头的样式（取值有miter(default)[默认]、bevel[斜接]、round[圆]）
-当设置context.miterLimit的时候，如果尖角的宽度大于这个值时，会以bevel的形式显示。
+context.lineJoin 设置线条的两头的样式（取值有miter(default)[默认]、bevel[斜接]、round[圆]）。
+当使用miter时，context.miterLimit才会生效，默认值为10，如果形成的尖角大于这个值时，会以bevel的形式显示。
 ```
 #### 矩形
 ```
 context.rect(x,y,width,height) x,y代表矩形的起始的坐标，width代表宽度，height代表高度
 context.fillRect(x,y,width,height) 可以直接绘制出填充的矩形
-strokeRext(x,y,width,height) 可以直接绘制出描边的矩形
+context.strokeRect(x,y,width,height) 可以直接绘制出描边的矩形
 context.clearRect(x,y,width,height) 可以清空一个矩形区域，多用在动画的绘制中
 ```
 ### 曲线
@@ -66,7 +66,7 @@ context.bezierCurveTo(x1,y1,x2,y2,x3,y3)
 context.fill()
   填充的基本属性：
 context.fillStyle设置填充样式
-注意当需要绘制既有填充也有描边的图案的时候，需要先填充后描边，否则描边的一般宽度会被填充覆盖
+注意当需要绘制既有填充也有描边的图案的时候，需要先填充后描边，否则描边的一半宽度会被填充覆盖
 ```
 #### 线性渐变
 ```
@@ -118,14 +118,23 @@ font-weight默认值为normal[default]，可选lighter[更细]，bold[粗],bolde
 font-size、font-family和CSS类似就不多做介绍了。
 
 context.textAlign设置文字左右对齐方式（取值有left,center,right）
-context.textBaseLine设置文字的上下对其方式（取值有top,middle,bottom,alphabeticdefault,ideographic(基于方块文字的基准线),hanging(基于印度语的基准线)）
+context.textBaseLine设置文字的上下对其方式（取值有top,middle,bottom,alphabetic(default,基于拉丁字母的基准线),ideographic(基于汉子、日本文字等方块文字的基准线),hanging(基于印度语的基准线)）
 context.measureText(string).width可以得到整个文字的宽度
 ```
 ### 图片
 ```
+三种调用方法:
+context.drawImage(img,dx,dy)
+context.drawImage(img,dx,dy,dw,dh)
+在dx,dy的位置绘制一个宽dw,高dh的img图片，如果不传入dw,dh参数，图片会按照原图大小平铺，不会进行缩放，操作的是绘制出的图像而不是原图像
+context.drawImage(img,sx,sy,sw,sh，dx,dy,dw,dh)
+将原图像的sx,sy为起点的宽高为sw,sh的区域绘制到canvas画布的dw,dy为起点，宽高为dw,dh的区域
+
 var img = new Image();
 img.src = "***.jpg";
-context.drawImage(img,x,y)
+img.onload = function () {
+  context.drawImage(img,dx,dy,dw,dh)
+}
 ```
 ### 其他
 #### 阴影
@@ -138,7 +147,7 @@ context.shadowBlur 设置阴影模糊距离
 #### 合成
 ```
 globalAlpha设置全局透明度（默认值为1，取值范围0-1）
-globalCompositeOperation设置图像在重叠时的状态（取值有sourse-overdefault，destination-over(先绘制的在后绘制的上面)，一共有九种取值：sourse-over,sourse-atop,sourse-in,sourse-out,destination-over,destination-atop,destination-in,destination-out,lighter,copy,xor）
+globalCompositeOperation设置图像在重叠时的状态（取值有sourse-over（default，后绘制的覆盖前绘制的），destination-over(先绘制的在后绘制的上面)，一共有九种取值：sourse-over,sourse-atop,sourse-in,sourse-out,destination-over,destination-atop,destination-in,destination-out,lighter,copy,xor）
 ```
 #### 剪辑区域
 ```
