@@ -566,12 +566,12 @@ context.stroke() &#x63CF;&#x8FB9;
 context.lineWidth &#x8BBE;&#x7F6E;&#x7EBF;&#x6761;&#x5BBD;&#x5EA6;&#xFF08;&#x53D6;&#x503C;&#x4E3A;&#x6570;&#x503C;&#xFF09;
 context.strokeStyle &#x8BBE;&#x7F6E;&#x7EBF;&#x6761;&#x6837;&#x5F0F;&#xFF08;&#x4E00;&#x822C;&#x53D6;&#x503C;&#x4E3A;&#x989C;&#x8272;&#x503C;&#xFF09;
 context.lineCap &#x8BBE;&#x7F6E;&#x7EBF;&#x6761;&#x7684;&#x4E24;&#x5934;&#x7684;&#x6837;&#x5F0F;&#xFF08;&#x53D6;&#x503C;&#x6709;butt(default)[&#x9ED8;&#x8BA4;]&#x3001;round[&#x5706;]&#x3001;square[&#x65B9;]&#xFF09;
-context.lineJoin &#x8BBE;&#x7F6E;&#x7EBF;&#x6761;&#x7684;&#x4E24;&#x5934;&#x7684;&#x6837;&#x5F0F;&#xFF08;&#x53D6;&#x503C;&#x6709;miter(default)[&#x9ED8;&#x8BA4;]&#x3001;bevel[&#x659C;&#x63A5;]&#x3001;round[&#x5706;]&#xFF09;
-&#x5F53;&#x8BBE;&#x7F6E;context.miterLimit&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5982;&#x679C;&#x5C16;&#x89D2;&#x7684;&#x5BBD;&#x5EA6;&#x5927;&#x4E8E;&#x8FD9;&#x4E2A;&#x503C;&#x65F6;&#xFF0C;&#x4F1A;&#x4EE5;bevel&#x7684;&#x5F62;&#x5F0F;&#x663E;&#x793A;&#x3002;
+context.lineJoin &#x8BBE;&#x7F6E;&#x7EBF;&#x6761;&#x7684;&#x4E24;&#x5934;&#x7684;&#x6837;&#x5F0F;&#xFF08;&#x53D6;&#x503C;&#x6709;miter(default)[&#x9ED8;&#x8BA4;]&#x3001;bevel[&#x659C;&#x63A5;]&#x3001;round[&#x5706;]&#xFF09;&#x3002;
+&#x5F53;&#x4F7F;&#x7528;miter&#x65F6;&#xFF0C;context.miterLimit&#x624D;&#x4F1A;&#x751F;&#x6548;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;10&#xFF0C;&#x5982;&#x679C;&#x5F62;&#x6210;&#x7684;&#x5C16;&#x89D2;&#x5927;&#x4E8E;&#x8FD9;&#x4E2A;&#x503C;&#x65F6;&#xFF0C;&#x4F1A;&#x4EE5;bevel&#x7684;&#x5F62;&#x5F0F;&#x663E;&#x793A;&#x3002;
 </code></pre><h4 id="&#x77E9;&#x5F62;">&#x77E9;&#x5F62;</h4>
 <pre><code>context.rect(x,y,width,height) x,y&#x4EE3;&#x8868;&#x77E9;&#x5F62;&#x7684;&#x8D77;&#x59CB;&#x7684;&#x5750;&#x6807;&#xFF0C;width&#x4EE3;&#x8868;&#x5BBD;&#x5EA6;&#xFF0C;height&#x4EE3;&#x8868;&#x9AD8;&#x5EA6;
 context.fillRect(x,y,width,height) &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7ED8;&#x5236;&#x51FA;&#x586B;&#x5145;&#x7684;&#x77E9;&#x5F62;
-strokeRext(x,y,width,height) &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7ED8;&#x5236;&#x51FA;&#x63CF;&#x8FB9;&#x7684;&#x77E9;&#x5F62;
+context.strokeRect(x,y,width,height) &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7ED8;&#x5236;&#x51FA;&#x63CF;&#x8FB9;&#x7684;&#x77E9;&#x5F62;
 context.clearRect(x,y,width,height) &#x53EF;&#x4EE5;&#x6E05;&#x7A7A;&#x4E00;&#x4E2A;&#x77E9;&#x5F62;&#x533A;&#x57DF;&#xFF0C;&#x591A;&#x7528;&#x5728;&#x52A8;&#x753B;&#x7684;&#x7ED8;&#x5236;&#x4E2D;
 </code></pre><h3 id="&#x66F2;&#x7EBF;">&#x66F2;&#x7EBF;</h3>
 <h4 id="&#x5706;&#x5F62;">&#x5706;&#x5F62;</h4>
@@ -594,7 +594,7 @@ context.bezierCurveTo(x1,y1,x2,y2,x3,y3)
 <pre><code>context.fill()
   &#x586B;&#x5145;&#x7684;&#x57FA;&#x672C;&#x5C5E;&#x6027;&#xFF1A;
 context.fillStyle&#x8BBE;&#x7F6E;&#x586B;&#x5145;&#x6837;&#x5F0F;
-&#x6CE8;&#x610F;&#x5F53;&#x9700;&#x8981;&#x7ED8;&#x5236;&#x65E2;&#x6709;&#x586B;&#x5145;&#x4E5F;&#x6709;&#x63CF;&#x8FB9;&#x7684;&#x56FE;&#x6848;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x586B;&#x5145;&#x540E;&#x63CF;&#x8FB9;&#xFF0C;&#x5426;&#x5219;&#x63CF;&#x8FB9;&#x7684;&#x4E00;&#x822C;&#x5BBD;&#x5EA6;&#x4F1A;&#x88AB;&#x586B;&#x5145;&#x8986;&#x76D6;
+&#x6CE8;&#x610F;&#x5F53;&#x9700;&#x8981;&#x7ED8;&#x5236;&#x65E2;&#x6709;&#x586B;&#x5145;&#x4E5F;&#x6709;&#x63CF;&#x8FB9;&#x7684;&#x56FE;&#x6848;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x586B;&#x5145;&#x540E;&#x63CF;&#x8FB9;&#xFF0C;&#x5426;&#x5219;&#x63CF;&#x8FB9;&#x7684;&#x4E00;&#x534A;&#x5BBD;&#x5EA6;&#x4F1A;&#x88AB;&#x586B;&#x5145;&#x8986;&#x76D6;
 </code></pre><h4 id="&#x7EBF;&#x6027;&#x6E10;&#x53D8;">&#x7EBF;&#x6027;&#x6E10;&#x53D8;</h4>
 <pre><code>var gradient = context.createLinearGradient(xstart,ystart,xend,yend)
 gradient.addColorStop(stop,color)
@@ -636,12 +636,21 @@ font-weight&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;normal[default]&#xFF0C;&#x53EF;&#x900
 font-size&#x3001;font-family&#x548C;CSS&#x7C7B;&#x4F3C;&#x5C31;&#x4E0D;&#x591A;&#x505A;&#x4ECB;&#x7ECD;&#x4E86;&#x3002;
 
 context.textAlign&#x8BBE;&#x7F6E;&#x6587;&#x5B57;&#x5DE6;&#x53F3;&#x5BF9;&#x9F50;&#x65B9;&#x5F0F;&#xFF08;&#x53D6;&#x503C;&#x6709;left,center,right&#xFF09;
-context.textBaseLine&#x8BBE;&#x7F6E;&#x6587;&#x5B57;&#x7684;&#x4E0A;&#x4E0B;&#x5BF9;&#x5176;&#x65B9;&#x5F0F;&#xFF08;&#x53D6;&#x503C;&#x6709;top,middle,bottom,alphabeticdefault,ideographic(&#x57FA;&#x4E8E;&#x65B9;&#x5757;&#x6587;&#x5B57;&#x7684;&#x57FA;&#x51C6;&#x7EBF;),hanging(&#x57FA;&#x4E8E;&#x5370;&#x5EA6;&#x8BED;&#x7684;&#x57FA;&#x51C6;&#x7EBF;)&#xFF09;
+context.textBaseLine&#x8BBE;&#x7F6E;&#x6587;&#x5B57;&#x7684;&#x4E0A;&#x4E0B;&#x5BF9;&#x5176;&#x65B9;&#x5F0F;&#xFF08;&#x53D6;&#x503C;&#x6709;top,middle,bottom,alphabetic(default,&#x57FA;&#x4E8E;&#x62C9;&#x4E01;&#x5B57;&#x6BCD;&#x7684;&#x57FA;&#x51C6;&#x7EBF;),ideographic(&#x57FA;&#x4E8E;&#x6C49;&#x5B50;&#x3001;&#x65E5;&#x672C;&#x6587;&#x5B57;&#x7B49;&#x65B9;&#x5757;&#x6587;&#x5B57;&#x7684;&#x57FA;&#x51C6;&#x7EBF;),hanging(&#x57FA;&#x4E8E;&#x5370;&#x5EA6;&#x8BED;&#x7684;&#x57FA;&#x51C6;&#x7EBF;)&#xFF09;
 context.measureText(string).width&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x6574;&#x4E2A;&#x6587;&#x5B57;&#x7684;&#x5BBD;&#x5EA6;
 </code></pre><h3 id="&#x56FE;&#x7247;">&#x56FE;&#x7247;</h3>
-<pre><code>var img = new Image();
+<pre><code>&#x4E09;&#x79CD;&#x8C03;&#x7528;&#x65B9;&#x6CD5;:
+context.drawImage(img,dx,dy)
+context.drawImage(img,dx,dy,dw,dh)
+&#x5728;dx,dy&#x7684;&#x4F4D;&#x7F6E;&#x7ED8;&#x5236;&#x4E00;&#x4E2A;&#x5BBD;dw,&#x9AD8;dh&#x7684;img&#x56FE;&#x7247;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x4F20;&#x5165;dw,dh&#x53C2;&#x6570;&#xFF0C;&#x56FE;&#x7247;&#x4F1A;&#x6309;&#x7167;&#x539F;&#x56FE;&#x5927;&#x5C0F;&#x5E73;&#x94FA;&#xFF0C;&#x4E0D;&#x4F1A;&#x8FDB;&#x884C;&#x7F29;&#x653E;&#xFF0C;&#x64CD;&#x4F5C;&#x7684;&#x662F;&#x7ED8;&#x5236;&#x51FA;&#x7684;&#x56FE;&#x50CF;&#x800C;&#x4E0D;&#x662F;&#x539F;&#x56FE;&#x50CF;
+context.drawImage(img,sx,sy,sw,sh&#xFF0C;dx,dy,dw,dh)
+&#x5C06;&#x539F;&#x56FE;&#x50CF;&#x7684;sx,sy&#x4E3A;&#x8D77;&#x70B9;&#x7684;&#x5BBD;&#x9AD8;&#x4E3A;sw,sh&#x7684;&#x533A;&#x57DF;&#x7ED8;&#x5236;&#x5230;canvas&#x753B;&#x5E03;&#x7684;dw,dy&#x4E3A;&#x8D77;&#x70B9;&#xFF0C;&#x5BBD;&#x9AD8;&#x4E3A;dw,dh&#x7684;&#x533A;&#x57DF;
+
+var img = new Image();
 img.src = &quot;***.jpg&quot;;
-context.drawImage(img,x,y)
+img.onload = function () {
+  context.drawImage(img,dx,dy,dw,dh)
+}
 </code></pre><h3 id="&#x5176;&#x4ED6;">&#x5176;&#x4ED6;</h3>
 <h4 id="&#x9634;&#x5F71;">&#x9634;&#x5F71;</h4>
 <pre><code>context.shadowColor &#x8BBE;&#x7F6E;&#x9634;&#x5F71;&#x989C;&#x8272;
@@ -650,7 +659,7 @@ context.shadowOffsetY &#x8BBE;&#x7F6E;&#x9634;&#x5F71;&#x5782;&#x76F4;&#x4F4D;&#
 context.shadowBlur &#x8BBE;&#x7F6E;&#x9634;&#x5F71;&#x6A21;&#x7CCA;&#x8DDD;&#x79BB;
 </code></pre><h4 id="&#x5408;&#x6210;">&#x5408;&#x6210;</h4>
 <pre><code>globalAlpha&#x8BBE;&#x7F6E;&#x5168;&#x5C40;&#x900F;&#x660E;&#x5EA6;&#xFF08;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;1&#xFF0C;&#x53D6;&#x503C;&#x8303;&#x56F4;0-1&#xFF09;
-globalCompositeOperation&#x8BBE;&#x7F6E;&#x56FE;&#x50CF;&#x5728;&#x91CD;&#x53E0;&#x65F6;&#x7684;&#x72B6;&#x6001;&#xFF08;&#x53D6;&#x503C;&#x6709;sourse-overdefault&#xFF0C;destination-over(&#x5148;&#x7ED8;&#x5236;&#x7684;&#x5728;&#x540E;&#x7ED8;&#x5236;&#x7684;&#x4E0A;&#x9762;)&#xFF0C;&#x4E00;&#x5171;&#x6709;&#x4E5D;&#x79CD;&#x53D6;&#x503C;&#xFF1A;sourse-over,sourse-atop,sourse-in,sourse-out,destination-over,destination-atop,destination-in,destination-out,lighter,copy,xor&#xFF09;
+globalCompositeOperation&#x8BBE;&#x7F6E;&#x56FE;&#x50CF;&#x5728;&#x91CD;&#x53E0;&#x65F6;&#x7684;&#x72B6;&#x6001;&#xFF08;&#x53D6;&#x503C;&#x6709;sourse-over&#xFF08;default&#xFF0C;&#x540E;&#x7ED8;&#x5236;&#x7684;&#x8986;&#x76D6;&#x524D;&#x7ED8;&#x5236;&#x7684;&#xFF09;&#xFF0C;destination-over(&#x5148;&#x7ED8;&#x5236;&#x7684;&#x5728;&#x540E;&#x7ED8;&#x5236;&#x7684;&#x4E0A;&#x9762;)&#xFF0C;&#x4E00;&#x5171;&#x6709;&#x4E5D;&#x79CD;&#x53D6;&#x503C;&#xFF1A;sourse-over,sourse-atop,sourse-in,sourse-out,destination-over,destination-atop,destination-in,destination-out,lighter,copy,xor&#xFF09;
 </code></pre><h4 id="&#x526A;&#x8F91;&#x533A;&#x57DF;">&#x526A;&#x8F91;&#x533A;&#x57DF;</h4>
 <pre><code>context.clip()&#x8BBE;&#x7F6E;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x7ED8;&#x5236;&#x533A;&#x57DF;&#x5728;&#x88AB;&#x526A;&#x8F91;&#x7684;&#x533A;&#x57DF;&#x5185;
 </code></pre><h4 id="&#x70B9;&#x51FB;&#x68C0;&#x6D4B;">&#x70B9;&#x51FB;&#x68C0;&#x6D4B;</h4>
@@ -695,7 +704,7 @@ var y=event.clientY - canvas.getBoundingClientRect().top;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"canvas常用方法","level":"1.6.1","depth":2,"next":{"title":"[ReactNative学习]","level":"1.7","depth":1,"ref":"","articles":[{"title":"初学ReactNative","level":"1.7.1","depth":2,"path":"react-native/1-reactNative.md","ref":"./react-native/1-reactNative.md","articles":[]},{"title":"ReactNative进阶一","level":"1.7.2","depth":2,"path":"react-native/2-reactNative.md","ref":"./react-native/2-reactNative.md","articles":[]},{"title":"ReactNative进阶二","level":"1.7.3","depth":2,"path":"react-native/3-reactNative.md","ref":"./react-native/3-reactNative.md","articles":[]}]},"previous":{"title":"[canvas学习]","level":"1.6","depth":1,"ref":"","articles":[{"title":"canvas常用方法","level":"1.6.1","depth":2,"path":"canvas/1-canvas.md","ref":"./canvas/1-canvas.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"canvas/1-canvas.md","mtime":"2017-10-26T08:03:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-04T08:43:20.679Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"canvas常用方法","level":"1.6.1","depth":2,"next":{"title":"[ReactNative学习]","level":"1.7","depth":1,"ref":"","articles":[{"title":"初学ReactNative","level":"1.7.1","depth":2,"path":"react-native/1-reactNative.md","ref":"./react-native/1-reactNative.md","articles":[]},{"title":"ReactNative进阶一","level":"1.7.2","depth":2,"path":"react-native/2-reactNative.md","ref":"./react-native/2-reactNative.md","articles":[]},{"title":"ReactNative进阶二","level":"1.7.3","depth":2,"path":"react-native/3-reactNative.md","ref":"./react-native/3-reactNative.md","articles":[]}]},"previous":{"title":"[canvas学习]","level":"1.6","depth":1,"ref":"","articles":[{"title":"canvas常用方法","level":"1.6.1","depth":2,"path":"canvas/1-canvas.md","ref":"./canvas/1-canvas.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"canvas/1-canvas.md","mtime":"2018-03-10T12:42:48.532Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-20T02:53:45.963Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
