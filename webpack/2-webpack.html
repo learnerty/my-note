@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Redux Store · GitBook</title>
+        <title>第二课 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="connect.html" />
     
+    <link rel="prev" href="1-webpack.html" />
     
 
     </head>
@@ -250,9 +250,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.3.1" data-path="store.html">
+        <li class="chapter " data-level="1.3.1" data-path="../redux/store.html">
             
-                <a href="store.html">
+                <a href="../redux/store.html">
             
                     
                     Redux Store
@@ -263,9 +263,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="connect.html">
+        <li class="chapter " data-level="1.3.2" data-path="../redux/connect.html">
             
-                <a href="connect.html">
+                <a href="../redux/connect.html">
             
                     
                     connect 订阅 store 数据
@@ -276,9 +276,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="combine-reducers.html">
+        <li class="chapter " data-level="1.3.3" data-path="../redux/combine-reducers.html">
             
-                <a href="combine-reducers.html">
+                <a href="../redux/combine-reducers.html">
             
                     
                     reducer 拆分
@@ -289,9 +289,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="thunk.html">
+        <li class="chapter " data-level="1.3.4" data-path="../redux/thunk.html">
             
-                <a href="thunk.html">
+                <a href="../redux/thunk.html">
             
                     
                     redux-thunk
@@ -514,9 +514,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../webpack/1-webpack.html">
+        <li class="chapter " data-level="1.8.1" data-path="1-webpack.html">
             
-                <a href="../webpack/1-webpack.html">
+                <a href="1-webpack.html">
             
                     
                     第一课
@@ -527,9 +527,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../webpack/2-webpack.html">
+        <li class="chapter active" data-level="1.8.2" data-path="2-webpack.html">
             
-                <a href="../webpack/2-webpack.html">
+                <a href="2-webpack.html">
             
                     
                     第二课
@@ -620,7 +620,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Redux Store</a>
+        <a href=".." >第二课</a>
     </h1>
 </div>
 
@@ -635,118 +635,95 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>Redux &#x662F;&#x6570;&#x636E;&#x6D41;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;&#x4F7F;&#x7528; Redux &#x7684;&#x6700;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x53E5;&#x8BDD;&#xFF1A;</p>
-<p>&#x540E;&#x7EED;&#x6211;&#x4EEC;&#x4F1A;&#x5B66;&#x7684;&#x4E00;&#x5207;&#x7684;&#x6280;&#x5DE7;&#x57FA;&#x672C;&#x670D;&#x52A1;&#x4E8E;&#x4E00;&#x4E2A;&#x5173;&#x7CFB;&#xFF1A;&#x7EC4;&#x4EF6;&#x548C; Store &#x7684;&#x5173;&#x7CFB;&#x3002;</p>
-<p>Redux&#x4E09;&#x5927;&#x6982;&#x5FF5;&#xFF1A;reducer  store  action</p>
-<h3 id="&#x4E3A;&#x4F55;&#x8981;&#x7EDF;&#x4E00;&#x5B58;&#x653E;&#x5230;-store-&#x4E2D;&#xFF1F;">&#x4E3A;&#x4F55;&#x8981;&#x7EDF;&#x4E00;&#x5B58;&#x653E;&#x5230; Store &#x4E2D;&#xFF1F;</h3>
-<p>&#x628A;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x90FD;&#x5B58;&#x653E;&#x5230; Store &#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x6240;&#x6709;&#x7684;&#x7EC4;&#x4EF6;&#x90FD;&#x8BA2;&#x9605; Store &#x7684;&#x6570;&#x636E;&#x3002;&#x90A3;&#x4E48;&#x6570;&#x636E;&#x5C31;&#x6709;&#x4E86; Single Source of Truth &#xFF08;&#x552F;&#x4E00;&#x53EF;&#x4FE1;&#x6570;&#x636E;&#x6E90;&#xFF09;&#x3002;&#x8FD9;&#x6837;&#x7684;&#x597D;&#x5904;&#x5C31;&#x662F;&#xFF1A;</p>
+                                <p>&#x8FD9;&#x90E8;&#x5206;&#x7528;&#x6765;&#x4ECB;&#x7ECD;webpack&#x7684;&#x4F7F;&#x7528;&#x3002;<br>webpack&#x53EF;&#x4EE5;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x5B89;&#x88C5;&#x6216;&#x8005;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#xFF0C;&#x4E0D;&#x8FC7;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x9879;&#x76EE;&#x5185;&#x5B89;&#x88C5;&#x7684;&#x65B9;&#x5F0F;&#x3002;  </p>
+<ol>
+<li>&#x9996;&#x5148;&#xFF0C;&#x5B89;&#x88C5;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A;node&#x9879;&#x76EE;<pre><code class="lang-js">mkdir webpackTest
+cs webpackTest
+npm init -y
+npm install --save-dev webpackTest
+</code></pre>
+</li>
+<li><p>&#x5982;&#x679C;&#x60F3;&#x8981;&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;import&#x4E00;&#x4E2A;css&#x6587;&#x4EF6;&#x6216;less&#x7B49;&#x591A;&#x79CD;css&#x6837;&#x5F0F;&#x6587;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x88C5;&#x4E00;&#x4E9B;&#x5305;</p>
+<pre><code class="lang-js">npm install --save-dev style-loader css-loader less-loader postcss-loader
+</code></pre>
 <ul>
-<li>&#x7B2C;&#x4E00;&#xFF0C;&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x90FD;&#x7EDF;&#x4E00;&#x8BFB;&#x5199;&#x540C;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#xFF0C;&#x7EC4;&#x4EF6;&#x95F4;&#x901A;&#x4FE1;&#x53D8;&#x5F97;&#x4E0D;&#x6210;&#x95EE;&#x9898;&#x4E86;</li>
-<li>&#x7B2C;&#x4E8C;&#xFF0C;&#x5C31;&#x662F;&#x6570;&#x636E;&#x7EDF;&#x4E00;&#x5B58;&#x653E;&#xFF0C;&#x4EE3;&#x7801;&#x6BD4;&#x8F83;&#x4E0D;&#x5BB9;&#x6613;&#x5199;&#x4E71;</li>
-</ul>
-<h3 id="&#x521B;&#x5EFA;-store-&#xFF1F;">&#x521B;&#x5EFA; Store &#xFF1F;</h3>
-<p>&#x5176;&#x5B9E; Store &#x7684;&#x4E3B;&#x4F53;&#x5C31;&#x662F;&#x5199;&#x5230; store.js &#x4E2D;&#x7684;&#x50BB;&#x50BB;&#x7684;&#x6570;&#x636E;&#xFF1A;</p>
-<p>&#x7C7B;&#x4F3C;&#xFF1A;</p>
-<pre><code>let comments = [
-    &quot;hello1&quot;,
-    &quot;hello2&quot;
+<li><p>&#x4E4B;&#x540E;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;webpack.config.js&#x6587;&#x4EF6;,&#x5199;&#x5165;&#x5982;&#x4E0B;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<span class="hljs-built_in">module</span>.exports = {
+<span class="hljs-comment">//&#x5165;&#x53E3;&#x6587;&#x4EF6;</span>
+entry: path.resolve(__dirname, <span class="hljs-string">&apos;src/index.js&apos;</span>),
+<span class="hljs-comment">//&#x8F93;&#x51FA;</span>
+output: {
+filename: <span class="hljs-string">&apos;bundle.js&apos;</span>,
+path: path.resolve(__dirname, <span class="hljs-string">&apos;dist&apos;</span>)
+},
+<span class="hljs-comment">//loaders, postcss&#x7684;&#x529F;&#x80FD;&#x662F;&#x4E3A;css&#x6837;&#x5F0F;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x5382;&#x5546;&#x524D;&#x7F00;&#xFF0C;&#x89E3;&#x51B3;&#x517C;&#x5BB9;&#x95EE;&#x9898;</span>
+<span class="hljs-built_in">module</span>: {
+rules: [
+  {
+    test: <span class="hljs-regexp">/\.css$/</span>,
+    use: [
+      <span class="hljs-string">&apos;style-loader&apos;</span>,
+      <span class="hljs-string">&apos;postcss-loader&apos;</span>,
+      <span class="hljs-string">&apos;css-loader&apos;</span>
+    ]
+  },
+  {
+    test: <span class="hljs-regexp">/\.less/</span>,
+    use: [
+      <span class="hljs-string">&apos;style-loader&apos;</span>,
+      <span class="hljs-string">&apos;postcss-loader&apos;</span>,
+      <span class="hljs-string">&apos;less-loader&apos;</span>
+    ]
+  }
 ]
-</code></pre><p>&#x4F46;&#x662F;&#xFF0C;store &#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5FC5;&#x7136;&#x8981;&#x6D89;&#x53CA;&#x8BFB;&#x548C;&#x5199;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x8981;&#x5B89;&#x88C5;
-&#x4E00;&#x4E2A;&#x5305;&#x6765;&#x8F85;&#x52A9;&#x540E;&#x7EED;&#x64CD;&#x4F5C;&#xFF1A;</p>
-<pre><code>npm i --save redux
-</code></pre><p>&#x5230; store.js &#x4E2D;&#x5148;&#x5BFC;&#x5165;</p>
-<pre><code>import { createStore } from &apos;redux&apos;;
-</code></pre><p>&#x6211;&#x4EEC;&#x53EF;&#x60F3;&#x8C61;&#x5230;&#x7684;&#x5C31;&#x662F;&#xFF0C; store.js &#x4E2D;&#x4F1A;&#x505A;&#x8FD9;&#x6837;&#x7684;&#x5BFC;&#x51FA;</p>
-<pre><code>let store = createStore(comments)
-export default store;
-</code></pre><p>&#x4F46;&#x662F;&#xFF0C;createStore &#x7684;<a href="http://redux.js.org/docs/api/createStore.html" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a> &#x4E2D;&#x6307;&#x660E;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x662F;&#x81F3;&#x5C11;&#x591A;&#x4F20;&#x4EBA;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x3002; &#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x5C31;&#x662F; reducer &#x3002;</p>
-<p>&#x8BFB;&#x4E00;&#x8BFB;&#x5B98;&#x65B9;&#x6587;&#x6863;&#xFF0C;&#x53D1;&#x73B0; createStore &#x53EF;&#x4EE5;&#x63A5;&#x6536;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
-<ul>
-<li>reducer &#xFF0C;&#x8FD9;&#x4E00;&#x9879;&#x662F;&#x5FC5;&#x987B;&#x586B;&#x5199;&#x7684;</li>
-<li>preloadedState&#xFF0C;&#x9884;&#x52A0;&#x8F7D; State &#xFF0C;&#x8FD9;&#x4E00;&#x9879;&#x662F;&#x53EF;&#x9009;&#x7684;</li>
-<li>enhancer&#xFF0C;&#x589E;&#x5F3A;&#x5668;&#xFF0C;&#x9009;&#x586B;</li>
-</ul>
-<h3 id="reducer">reducer</h3>
-<p>reducer &#x548C; store &#x4E00;&#x6837;&#x662F; redux &#x4E09;&#x5927;&#x6838;&#x5FC3;&#x6982;&#x5FF5;&#x4E4B;&#x4E00;&#x3002;reducer &#x662F;
-&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x4FEE;&#x6539; store &#x4E2D;&#x7684;&#x6570;&#x636E;&#x3002;</p>
-<p>reducer &#x7684;&#x57FA;&#x672C;&#x683C;&#x5F0F;&#x662F;&#xFF1A;</p>
-<pre><code>(oldState, action) =&gt; nextState
-</code></pre><p>&#x8FD9;&#x91CC;&#x5148;&#x5199;&#x4E00;&#x4E2A;&#x7A7A;&#x7684; reducer &#xFF1A;</p>
-<pre><code>function commentReducer(state = [], action) {
-  return state;
 }
-</code></pre><p>&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF1A;</p>
-<pre><code>function commentReducer(state = [], action) {
-  // console.log(state, action);
-  switch (action.type) {
-    case &apos;ADD_COMMENT&apos;:
-      // console.log([...state, action.comment])
-      return [...state, action.comment]
-    default:
-      return state;
-  }
-}
-</code></pre><h3 id="&#x4FEE;&#x6539;-store-&#x4E2D;&#x7684;&#x6570;&#x636E;">&#x4FEE;&#x6539; Store &#x4E2D;&#x7684;&#x6570;&#x636E;</h3>
-<p>&#x524D;&#x9762;&#x5B9E;&#x73B0;&#x4E86;&#x4ECE; Store &#x4E2D;&#x901A;&#x8FC7; store.getState() &#x8BFB;&#x6570;&#x636E;&#x3002;&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x6765;&#x5B9E;&#x73B0;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x4E2A;&#x4E3B;&#x8981;&#x901A;&#x8FC7; Redux &#x4E09;&#x5927;&#x6982;&#x5FF5;&#x7684;&#xFF0C;&#x53E6;&#x5916;&#x4E24;&#x4E2A;&#xFF1A;action &#xFF0C; reducer &#x6765;&#x914D;&#x5408;&#x4F7F;&#x7528;&#x3002;</p>
-<p>&#x57FA;&#x672C;&#x539F;&#x7406;&#xFF1A;&#x7EC4;&#x4EF6;&#x53D1;&#x51FA; action &#xFF0C;action &#x89E6;&#x53D1; reducer &#xFF0C;&#x771F;&#x6B63;&#x4FEE;&#x6539;
-&#x6570;&#x636E;&#xFF0C;&#x662F;&#x901A;&#x8FC7; reducer &#x6765;&#x5B8C;&#x6210;&#x3002;</p>
-<h3 id="&#x5148;&#x6765;&#x770B;-action">&#x5148;&#x6765;&#x770B; action</h3>
-<p>&#x524D;&#x9762;&#x7684;&#x7528;&#x8BCD;&#x662F;<strong>&#x7EC4;&#x4EF6;&#x53D1;&#x51FA; action</strong> &#x53EF;&#x89C1; action &#x662F;&#x540D;&#x8BCD;&#x3002;&#x90A3;&#x4E48; redux &#x8FD9;&#x91CC; action &#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5982;&#x4E0B;&#x7684;&#x5BF9;&#x8C61;&#xFF1A;</p>
-<pre><code>let action = {
-  type: &apos;ADD_COMMENT&apos;,
-  comment: &quot;hello3&quot;
-}
-</code></pre><p>action &#x5BF9;&#x8C61;&#x6709;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF1A;</p>
-<ul>
-<li>&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#xFF0C;&#x8981;&#x6709;&#x4E00;&#x4E2A; type &#x5C5E;&#x6027;&#xFF0C;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
-<li>&#x7B2C;&#x4E8C;&#x90E8;&#x5206;&#xFF0C;payload &#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8FD9;&#x4E2A; action &#x643A;&#x5E26;&#x7684;&#x6570;&#x636E;</li>
-</ul>
-<p>&#x4E0A;&#x9762;&#x7684;&#x8FD9;&#x4E2A;&#x5F62;&#x5F0F;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x8054;&#x60F3;&#x8D77;&#x4E86; axios &#x53D1; POST &#x8BF7;&#x6C42;&#xFF08;action &#x7684;&#x63A5;&#x53D7;&#x65B9;&#x5C31;&#x662F; reducer&#xFF09;&#x3002;</p>
-<p>&#x53D1;&#x51FA;&#x4E00;&#x4E2A; action &#x5C31;&#x662F;&#x5728;&#x7EC4;&#x4EF6;&#x5185;&#x90E8;&#xFF1A;</p>
-<pre><code>store.dispatch(action)
-</code></pre><p>dispatch &#x5C31;&#x662F;&#x53D1;&#x51FA;&#xFF08;&#x5206;&#x53D1;&#xFF09;&#x7684;&#x610F;&#x601D;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x5B83;&#x53D1;&#x51FA; action &#x3002;</p>
-<p>&#x53D1;&#x51FA;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x6709;&#x4E13;&#x95E8;&#x5BF9;&#x5E94;&#x7684; reducer &#x8FDB;&#x884C;&#x63A5;&#x6536;&#x3002;</p>
-<h3 id="reducer">Reducer</h3>
-<p>&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#x63A5;&#x53D7; action &#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E; action &#x4FEE;&#x6539; store &#x4E2D;&#x7684;&#x6570;&#x636E;&#x3002;</p>
-<p>&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code>function commentReducer(state = comments, action) {
-  switch (action.type) {
-    case &apos;ADD_COMMENT&apos;:
-      return [...state, action.comment];
-    default:
-      return state
-  }
-}
-</code></pre><p>&#x8FD9;&#x6837;&#xFF1A;&#x6BCF;&#x6B21; dispatch action &#x4E4B;&#x540E;&#xFF0C;reducer &#x90FD;&#x53EF;&#x4EE5;&#x53BB;&#x4FEE;&#x6539; state &#x503C;&#x4E86;&#x3002;</p>
-<p>&#x6574;&#x4E2A; store &#x4E2D;&#x5B58;&#x50A8;&#x7684; state &#x503C;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x628A;&#x5B83;&#x53EB;&#x505A;<strong>&#x72B6;&#x6001;&#x6811;</strong> ( state tree ) &#x3002;&#x72B6;&#x6001;&#x6811;&#x7684;&#x5177;&#x4F53;&#x503C;&#x5C31;&#x662F; store.getState() &#x7684;&#x8FD4;&#x56DE;&#x503C;&#x3002;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x6811;&#x3002;</p>
-<h3 id="&#x4FEE;&#x6539;&#x6570;&#x636E;&#x7684;&#x65F6;&#x95F4;&#x7EF4;&#x5EA6;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;">&#x4FEE;&#x6539;&#x6570;&#x636E;&#x7684;&#x65F6;&#x95F4;&#x7EF4;&#x5EA6;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;</h3>
-<p>&#x9996;&#x5148;&#xFF0C;&#x7528;&#x6237;&#x70B9;&#x63D0;&#x4EA4;&#x6309;&#x94AE;</p>
-<pre><code>store.dispatch({type, payload})
-</code></pre><p>&#x7136;&#x540E;&#xFF0C;&#x7531; store.js &#x4E2D;&#x7684; commentReducer &#x6765;&#x63A5;&#x6536;&#x3002;</p>
-<pre><code>function commentReducer(state = [], action) {
-  // console.log(state, action);
-  switch (action.type) {
-    case &apos;ADD_COMMENT&apos;:
-      // console.log([...state, action.comment])
-      return [...state, action.comment]
-    default:
-      return state;
-  }
-}
-</code></pre><p>&#x4E5F;&#x5C31;&#x662F; commentReducer &#x8981;&#x5F00;&#x59CB;&#x6267;&#x884C;&#xFF0C;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#xFF0C;state &#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;</p>
-<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x770B;&#x5230; commentReducer &#x4E2D; state &#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x662F; <code>[]</code> &#xFF0C;
-&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x5982;&#x679C; state &#x6211;&#x4EEC;&#x4E0D;&#x7ED9;&#x5B83;&#x8D4B;&#x503C;&#xFF0C;&#x540E;&#x7EED;&#x6267;&#x884C;&#x4E2D;&#x5B83;&#x7684;&#x503C;&#x5C31;&#x662F; <code>[]</code></p>
-<p>&#x5E76;&#x4E14;&#x8FD9;&#x91CC;&#x6BD4;&#x8F83;&#x5947;&#x602A;&#x7684;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x6CA1;&#x53C8;&#x770B;&#x5230; commentReducer &#x7684;&#x8C03;&#x7528;&#x8BED;&#x53E5;&#xFF0C;&#x7C7B;&#x4F3C;</p>
-<pre><code>let state = [
-...
+};
+</code></pre>
+</li>
+<li><p>&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x90FD;&#x4F1A;&#x4F7F;&#x7528;<code>extract-text-webpack-plugin</code>&#x63D2;&#x4EF6;&#x62BD;&#x79BB;css&#x6837;&#x5F0F;&#xFF0C;&#x9632;&#x6B62;&#x5C06;&#x6837;&#x5F0F;&#x6253;&#x5305;&#x5728;js&#x4E2D;&#x5F15;&#x8D77;&#x9875;&#x9762;&#x6837;&#x5F0F;&#x52A0;&#x8F7D;&#x9519;&#x4E71;&#x7684;&#x73B0;&#x8C61;</p>
+<pre><code class="lang-js">&#x9996;&#x5148;&#x5B89;&#x88C5;&#x8BE5;&#x63D2;&#x4EF6;&#xFF1A;
+npm install extract-text-webpack-plugin --save-dev
+&#x8BE5;&#x63D2;&#x4EF6;&#x6709;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;
+use:&#x6307;&#x9700;&#x8981;&#x4EC0;&#x4E48;&#x6837;&#x7684;loader&#x53BB;&#x7F16;&#x8BD1;&#x6587;&#x4EF6;
+fallback:&#x7F16;&#x8BD1;&#x540E;&#x7528;&#x4EC0;&#x4E48;loader&#x6765;&#x63D0;&#x53D6;css&#x6587;&#x4EF6;
+publicfile:&#x7528;&#x6765;&#x8986;&#x76D6;&#x9879;&#x76EE;&#x8DEF;&#x5F84;,&#x751F;&#x6210;&#x8BE5;css&#x6587;&#x4EF6;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;
+&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF1A;
+<span class="hljs-keyword">const</span> ExtractTextPlugin = <span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;extract-text-webpack-plugin&quot;</span>);
+<span class="hljs-built_in">module</span>: {
+rules: [
+ {
+   test: <span class="hljs-regexp">/\.css$/</span>,
+   use: ExtractTextPlugin.extract({
+     fallback: <span class="hljs-string">&quot;style-loader&quot;</span>,
+     use: [<span class="hljs-string">&quot;css-loader&quot;</span>,<span class="hljs-string">&quot;postcss-loader&quot;</span>]
+   })
+ }
 ]
-commentReducer(state, action)
-</code></pre><p>&#x6240;&#x4EE5;&#x611F;&#x89C9;&#x4E0A;&#x662F;&#x662F;&#x6CA1;&#x6709;&#x7ED9; state &#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5176;&#x5B9E; redux &#x91C7;&#x7528;&#x7684;&#x662F;<strong>&#x51FD;&#x6570;&#x5F0F;&#x7F16;&#x7A0B;</strong>&#x7684;&#x601D;&#x60F3;&#x3002;</p>
-<p>commentReducer &#x7684;&#x8C03;&#x7528;&#x662F;&#x5728;</p>
-<pre><code>const store = createStore(commentReducer, comments);
-</code></pre><p>&#x5E76;&#x4E14;&#xFF0C;&#x8C03;&#x7528;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;state &#x4E5F;&#x8D4B;&#x503C;&#x4E3A; <code>comments</code>&#x3002;</p>
-<p>&#x5F53; <code>return [...state, action.comment]</code> &#x6267;&#x884C;&#x4E4B;&#x540E;&#xFF0C;
-store.getState() &#x7684;&#x503C;&#x5C31;&#x88AB;&#x6539;&#x53D8;&#x4E86;&#x3002;</p>
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>&#x5BF9;&#x56FE;&#x7247;&#x548C;&#x5B57;&#x4F53;&#x7684;&#x5904;&#x7406;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>file-loader</code><br><code>npm install --save-dev file-loader</code><pre><code class="lang-js"><span class="hljs-built_in">module</span>: {
+rules: [
+ {
+   test: <span class="hljs-regexp">/\.(png|svg|jpg|gif)$/</span>,
+   use: [
+     <span class="hljs-string">&apos;file-loader&apos;</span>
+   ]
+ },
+ {
+   test: <span class="hljs-regexp">/\.(woff|woff2|eot|ttf|otf)$/</span>,
+   use: [
+     <span class="hljs-string">&apos;file-loader&apos;</span>
+   ]
+ }
+]
+}
+</code></pre>
+</li>
+</ol>
 
                                 
                                 </section>
@@ -774,10 +751,10 @@ store.getState() &#x7684;&#x503C;&#x5C31;&#x88AB;&#x6539;&#x53D8;&#x4E86;&#x3002
 
             
                 
-                
-                <a href="connect.html" class="navigation navigation-next navigation-unique" aria-label="Next page: connect 订阅 store 数据">
-                    <i class="fa fa-angle-right"></i>
+                <a href="1-webpack.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 第一课">
+                    <i class="fa fa-angle-left"></i>
                 </a>
+                
                 
             
         
@@ -786,7 +763,7 @@ store.getState() &#x7684;&#x503C;&#x5C31;&#x88AB;&#x6539;&#x53D8;&#x4E86;&#x3002
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Redux Store","level":"1.3.1","depth":2,"next":{"title":"connect 订阅 store 数据","level":"1.3.2","depth":2,"path":"redux/connect.md","ref":"./redux/connect.md","articles":[]},"previous":{"title":"[Redux学习]","level":"1.3","depth":1,"ref":"","articles":[{"title":"Redux Store","level":"1.3.1","depth":2,"path":"redux/store.md","ref":"./redux/store.md","articles":[]},{"title":"connect 订阅 store 数据","level":"1.3.2","depth":2,"path":"redux/connect.md","ref":"./redux/connect.md","articles":[]},{"title":"reducer 拆分","level":"1.3.3","depth":2,"path":"redux/combine-reducers.md","ref":"./redux/combine-reducers.md","articles":[]},{"title":"redux-thunk","level":"1.3.4","depth":2,"path":"redux/thunk.md","ref":"./redux/thunk.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"redux/store.md","mtime":"2018-02-24T07:22:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-01T06:19:15.021Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第二课","level":"1.8.2","depth":2,"next":{"title":"[web相关]","level":"1.9","depth":1,"ref":"","articles":[{"title":"mera标签","level":"1.9.1","depth":2,"path":"web/meta.md","ref":"./web/meta.md","articles":[]},{"title":"less学习","level":"1.9.2","depth":2,"path":"web/less1.md","ref":"./web/less1.md","articles":[]}]},"previous":{"title":"第一课","level":"1.8.1","depth":2,"path":"webpack/1-webpack.md","ref":"./webpack/1-webpack.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"webpack/2-webpack.md","mtime":"2018-03-22T06:55:53.219Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-01T06:19:15.021Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
